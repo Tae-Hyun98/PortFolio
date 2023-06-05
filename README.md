@@ -1,13 +1,11 @@
 # 프론트엔드 개발자 태현's PortFolio
 
-<div fontWeight="bold" align="center">
-My Stack
-</div> 
-<div align="center">
- <a href="#!"><img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"/></a>
- <a href="#!"><img src="https://img.shields.io/badge/css3-1572B6?style=flat&logo=css3&logoColor=white"/></a>
- <a href="#!"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=white"/></a>
-</div> 
+## 📚 My Stack  
+<a href="#!"><img height="20px" src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"/></a>
+<a href="#!"><img height="20px" src="https://img.shields.io/badge/css3-1572B6?style=flat&logo=css3&logoColor=white"/></a>
+<a href="#!"><img height="20px" src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white"/></a>
+<a href="#!"><img height="20px" src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=white"/></a>
+
 
 
 [개인프로젝트](https://ssssol.tistory.com/70, '프로젝트')
