@@ -3,6 +3,99 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+}
+
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.let {
+  color: cornflowerblue;
+}
+
+.int_color {
+  color: rgba(255, 255, 0, 0.889);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #ccc, $alpha: 0.8);
+  z-index: 9999;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+
+      a {
+        display: block;
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 20px 25px;
+      }
+    }
+  }
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/화면\ 캡처\ 2023-06-08\ 221203.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .intro_box {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+
+    p {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        padding-left: 67px;
+      }
+
+      &:nth-child(5) {
+        padding-left: 210px;
+      }
+
+      span {
+        padding-right: 15px;
+      }
+    }
+  }
+
 }
