@@ -84,10 +84,12 @@ h5 {
       font-weight: 700;
       color: #fff;
       letter-spacing: 1px;
+
       .under {
         position: relative;
       }
-      .under::before{
+
+      .under::before {
         content: '';
         display: block;
         position: absolute;
@@ -101,6 +103,25 @@ h5 {
 
     .typing {
       margin-top: 50px;
+
+      .text{color: cornflowerblue;}
+
+      .text::after {
+        content: '';
+        margin-left: .4rem;
+        border-right: 2px solid #777;
+        animation: cursor .9s infinite steps(2);
+      }
+
+      @keyframes cursor {
+        from {
+          border-right: 2px solid #222;
+        }
+
+        to {
+          border-right: 2px solid #777;
+        }
+      }
     }
   }
 
