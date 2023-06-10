@@ -13,14 +13,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans:wght@300;400&family=Raleway:wght@600;700&display=swap"
     rel="stylesheet">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
 </head>
 
 <body>
-  <div class="wrap">
+  <section class="wrap">
     <!--------- header ----------->
     <header class="header">
       <ul>
-        <li><a href="#!">Intro</a></li>
+        <li><a href="./index.html" class="on">Intro</a></li>
         <li><a href="#!">Profile</a></li>
         <li><a href="#!">Skill</a></li>
         <li><a href="#!">Project</a></li>
@@ -29,7 +32,7 @@
     </header>
 
     <!--------- intro ---------->
-    <section class="intro">
+    <section id="intro">
       <div class="container">
         <div class="intro_box">
           <span>안녕하세요.</span>
@@ -38,20 +41,94 @@
             <span class="under">권태현</span>입니다.
           </span>
 
+          <hr class="bar">
+
           <div class="typing">
             <span>저는 </span>
             <span class="text"></span>
             <span> 개발자입니다.</span>
+          </div>
+
+          <div class="down">
+            <div class="scroll_text">
+              <span>s</span>
+              <span>c</span>
+              <span>r</span>
+              <span>o</span>
+              <span>l</span>
+              <span>l</span>
+            </div>
+
+            <span class="down_icon">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-down"></i>
+            </span>
           </div>
         </div>
       </div>
     </section>
 
 
+    <section id="profile">
+      <div class="container">
+        <h1>Profile</h1>
+
+        <div class="row">
+          <div class="profile_img">
+            <img src="./images/profile_img.jpg" alt="profile_img">
+          </div>
+
+          <div class="about_me">
+            <ul>
+              <li>
+                <p class="tit">이름</p>
+                <p>권태현</p>
+              </li>
+
+              <li>
+                <p class="tit">생년월일</p>
+                <p>1998 / 11 / 09</p>
+              </li>
+
+              <li>
+                <p class="tit">나이</p>
+                <p>26세</p>
+              </li>
+
+              <li>
+                <p class="tit">주소</p>
+                <p>서울특별시 강남</p>
+              </li>
+
+              <li>
+                <p class="tit">휴대폰</p>
+                <p>010 - 1111 - 1111</p>
+              </li>
+
+              <li>
+                <p class="tit">E-mail</p>
+                <p>kt9811@naver.com</p>
+              </li>
+
+              <li>
+                <p class="tit">Gitgub</p>
+                <p><a href="https://github.com/Tae-Hyun98" target="_blank">https://github.com/Tae-Hyun98
+                  </a></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="education">
+            1
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="box">
       <!-- <video autoplay muted loop src="./이디야.mp4"></video> -->
     </div>
-  </div>
+    </div>
 
 
 </body>
