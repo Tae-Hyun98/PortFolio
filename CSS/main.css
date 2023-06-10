@@ -39,11 +39,6 @@ h5 {
   color: rgba(255, 255, 0, 0.889);
 }
 
-.tit {
-  font-weight: bolder;
-  font-size: 28px;
-}
-
 .wrap {
   overflow: hidden;
 }
@@ -183,8 +178,9 @@ h5 {
 }
 #profile h1 {
   text-align: center;
-  font-size: 45px;
+  font-size: 55px;
   padding-bottom: 40px;
+  color: green;
 }
 #profile .row {
   display: flex;
@@ -194,9 +190,13 @@ h5 {
 #profile .row a {
   font-size: 20px;
 }
+#profile .row .tit {
+  font-weight: bolder;
+  font-size: 24px;
+}
 #profile .row .profile_img {
   width: 380px;
-  overflow: hidden;
+  padding-top: 30px;
 }
 #profile .row .profile_img img {
   display: block;
@@ -204,11 +204,38 @@ h5 {
   height: 500px;
 }
 #profile .row .about_me {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 #profile .row .about_me ul li {
   margin-bottom: 15px;
 }
+#profile .row .education p {
+  margin-bottom: 5px;
+}
+#profile .row .education .certificate {
+  margin-top: 40px;
+}
+
+#skill h1 {
+  text-align: center;
+  font-size: 55px;
+  padding-bottom: 40px;
+  color: green;
+}
+#skill .skill_box {
+  display: flex;
+}
+#skill .skill_box .skill_left {
+  display: flex;
+}
+#skill .skill_box .skill_left > div {
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
 @media (max-width: 1280px) {
   #intro .intro_box span {
     font-size: 40px;
@@ -270,9 +297,14 @@ h5 {
   #profile .row {
     flex-direction: column;
   }
+  #profile .row p,
+  #profile .row a {
+    font-size: 18px;
+  }
   #profile .row .profile_img {
     width: calc(100% - 80px);
     margin: 0 auto;
+    padding: 0;
   }
   #profile .row .profile_img img {
     display: block;
@@ -280,11 +312,9 @@ h5 {
     height: 100%;
   }
   #profile .row .about_me {
-    margin-top: 20px;
-    margin-left: 10px;
+    margin: 20px 0px 20px 40px;
   }
   #profile .education {
-    margin-top: 30px;
-    margin-left: 10px;
+    margin: 0 0 0 40px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -39,11 +39,6 @@ h5 {
   color: rgba(255, 255, 0, 0.889);
 }
 
-.tit {
-  font-weight: bolder;
-  font-size: 28px;
-}
-
 .wrap {
   overflow: hidden;
 }
@@ -216,8 +211,9 @@ h5 {
 
   h1 {
     text-align: center;
-    font-size: 45px;
+    font-size: 55px;
     padding-bottom: 40px;
+    color: green;
   }
 
   .row {
@@ -229,9 +225,14 @@ h5 {
       font-size: 20px;
     }
 
+    .tit {
+      font-weight: bolder;
+      font-size: 24px;
+    }
+
     .profile_img {
       width: 380px;
-      overflow: hidden;
+      padding-top: 30px;
 
       img {
         display: block;
@@ -241,7 +242,7 @@ h5 {
     }
 
     .about_me {
-      margin-left: 40px;
+      margin-left: 20px;
 
       ul {
         li {
@@ -252,10 +253,43 @@ h5 {
       }
     }
 
-    .education {}
+    .education {
+      p {
+        margin-bottom: 5px;
+      }
+
+      .certificate {
+        margin-top: 40px;
+      }
+    }
   }
 }
 
+
+#skill {
+  h1 {
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 40px;
+    color: green;
+  }
+
+  .skill_box {
+    display: flex;
+    
+    .skill_left {
+      display: flex;
+      >div {
+        width: 200px;
+        line-height: 200px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+    }
+
+  }
+}
 
 
 
@@ -356,9 +390,15 @@ h5 {
     .row {
       flex-direction: column;
 
+      p,
+      a {
+        font-size: 18px;
+      }
+
       .profile_img {
         width: calc(100% - 80px);
         margin: 0 auto;
+        padding: 0;
 
         img {
           display: block;
@@ -368,14 +408,12 @@ h5 {
       }
 
       .about_me {
-        margin-top: 20px;
-        margin-left: 10px;
+        margin: 20px 0px 20px 40px;
       }
     }
 
     .education {
-      margin-top: 30px;
-      margin-left: 10px;
+      margin: 0 0 0 40px;
     }
   }
 }
