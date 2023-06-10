@@ -84,6 +84,7 @@ h5 {
   background: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 #intro .intro_box {
   height: 100%;
@@ -270,12 +271,12 @@ h5 {
     flex-direction: column;
   }
   #profile .row .profile_img {
-    width: 380px;
+    width: calc(100% - 80px);
     margin: 0 auto;
   }
   #profile .row .profile_img img {
     display: block;
     width: 100%;
-    height: 450px;
+    height: 470px;
   }
 }/*# sourceMappingURL=main.css.map */
