@@ -1,22 +1,20 @@
-const text = document.querySelector('.typing .text');
+const text = document.querySelector('.text');
 
-const letters = ["프론트엔드", "새로운 기술을 배우는 것을 좋아하는", "끈기와 열정이 있는", "포기하지 않는"];
+const letters = ["프론트엔드", "배우는 것을 좋아하는", "끈기와 열정이 있는", "포기하지 않는"];
 
-const speed = 80;
 let i = 0;
-
 
 // 타이핑 효과
 const typing = async () => {
   const letter = letters[i].split('');
 
   while (letter.length) {
-    await wait(speed);
+    await wait(100);
     text.innerHTML += letter.shift();
   }
 
   // 잠시 대기
-  await wait(800);
+  await wait(2000);
 
   // 지우는 효과
   remove();
@@ -27,7 +25,7 @@ const remove = async () => {
   const letter = letters[i].split('');
 
   while (letter.length) {
-    await wait(speed);
+    await wait(80);
 
     letter.pop();
     text.innerHTML = letter.join("");
@@ -38,10 +36,9 @@ const remove = async () => {
   typing();
 }
 
-// 딜레이 기능 ( 마이크로초 )
-function wait(ms) {
-  return new Promise(res => setTimeout(res, ms))
+// 딜레이 기능
+function wait(time) {
+  return new Promise(res => setTimeout(res, time))
 }
 
-// 초기 실행
-setTimeout(typing, 1000);
+setTimeout(typing, 1500);
