@@ -179,7 +179,6 @@ h5 {
 
 #profile {
   padding: 60px 0;
-  height: 100vh;
 }
 #profile h1 {
   text-align: center;
@@ -188,34 +187,95 @@ h5 {
 }
 #profile .row {
   display: flex;
+  justify-content: space-between;
+}
+#profile .row p,
+#profile .row a {
+  font-size: 20px;
+}
+#profile .row .profile_img {
+  width: 380px;
+  overflow: hidden;
 }
 #profile .row .profile_img img {
   display: block;
-  width: 400px;
-  height: 520px;
+  width: 100%;
+  height: 500px;
 }
 #profile .row .about_me {
-  padding-left: 40px;
+  margin-left: 40px;
 }
 #profile .row .about_me ul li {
   margin-bottom: 15px;
 }
-#profile .row .about_me ul li p,
-#profile .row .about_me ul li a {
-  font-size: 20px;
-}
-#profile .row .education {
-  padding-left: 40px;
-}
-
 @media (max-width: 1280px) {
-  .intro .intro_box span {
+  #intro .intro_box span {
     font-size: 40px;
   }
-  .intro .intro_box span .under {
+  #intro .intro_box span .under {
     font-size: 48px;
   }
-  .intro .intro_box .typing span {
+  #intro .intro_box .typing span {
     font-size: 36px;
+  }
+}
+@media (max-width: 680px) {
+  #intro .intro_box span {
+    font-size: 20px;
+  }
+  #intro .intro_box span .under {
+    font-size: 26px;
+  }
+  #intro .intro_box .typing span {
+    font-size: 18px;
+  }
+  #intro .intro_box .down {
+    position: absolute;
+    animation: ani 2s infinite;
+  }
+  @keyframes ani {
+    0% {
+      bottom: 25px;
+    }
+    40% {
+      bottom: 10px;
+    }
+    100% {
+      bottom: 25px;
+    }
+  }
+  #intro .intro_box .down span,
+  #intro .intro_box .down i {
+    display: block;
+    text-align: center;
+    color: #ccc;
+  }
+  #intro .intro_box .down .scroll_text span {
+    line-height: 20px;
+    font-size: 22px;
+  }
+  #intro .intro_box .down .down_icon {
+    padding-top: 10px;
+  }
+  #intro .intro_box .down .down_icon i {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  #profile .row {
+    flex-direction: column;
+  }
+  #profile .row .profile_img {
+    width: 380px;
+    margin: 0 auto;
+  }
+  #profile .row .profile_img img {
+    display: block;
+    width: 100%;
+    height: 450px;
   }
 }/*# sourceMappingURL=main.css.map */
