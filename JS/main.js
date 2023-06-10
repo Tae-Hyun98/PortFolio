@@ -44,25 +44,40 @@ function wait(time) {
 setTimeout(typing, 1500);
 
 
-countingType1(100)
-function countingType1(num){
-  const percent = document.querySelector('.percent')
-  if(num == 0){
-    percent.innerHTML = '0';
+
+const percent = document.querySelectorAll('.percent');
+percent.forEach((item, idx) => {
+  if (idx === 0) {
+    countingType1(percent[idx], 100)
+  } else if (idx === 1) {
+    countingType1(percent[idx], 100)
+  } else if (idx === 2) {
+    countingType1(percent[idx], 90)
+  } else if (idx === 3) {
+    countingType1(percent[idx], 90)
+  } else if (idx === 4) {
+    countingType1(percent[idx], 90)
+  }
+})
+
+function countingType1(value, num) {
+
+  if (num == 0) {
+    value.innerHTML = '0';
   } else {
     /* 입력한 숫자를 33번에 걸쳐 0부터 올림. */
-    const each = Math.ceil(num/50);
+    const each = Math.ceil(num / 90);
     let time = 0
 
-    for(let i=0; i<=num; i+=each){
+    for (let i = 0; i <= num; i += each) {
       setTimeout(() => {
-        percent.innerHTML = i+'%';
-      }, 20*time);
+        value.innerHTML = i + '%';
+      }, 20 * time);
       /* 딱 떨어지지 않는 숫자를 마지막에 그 숫자로 만들어주기 위함 */
-      if(i+each>this.maxNum1){
+      if (i + each > this.maxNum1) {
         setTimeout(() => {
-          percent.innerHTML = num;
-        }, 20*(time+1));
+          value.innerHTML = num;
+        }, 20 * (time + 1));
       }
       time++;
     }

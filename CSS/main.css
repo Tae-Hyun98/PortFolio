@@ -193,6 +193,7 @@ h5 {
 #profile .row .tit {
   font-weight: bolder;
   font-size: 24px;
+  color: #000;
 }
 #profile .row .profile_img {
   width: 380px;
@@ -213,7 +214,7 @@ h5 {
   margin-bottom: 5px;
 }
 #profile .row .education .certificate {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 #skill h1 {
@@ -224,16 +225,30 @@ h5 {
 }
 #skill .skill_box {
   display: flex;
+  justify-content: space-between;
 }
-#skill .skill_box .skill_left {
+#skill .skill_box .skill_left ul {
   display: flex;
+  flex-wrap: wrap;
 }
-#skill .skill_box .skill_left > div {
-  width: 200px;
-  line-height: 200px;
+#skill .skill_box .skill_left ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  line-height: 2;
   text-align: center;
   border: 1px solid black;
   border-radius: 50%;
+  margin-right: 10px;
+}
+#skill .skill_box .skill_left ul li:last-child {
+  margin-right: 0;
+}
+#skill .skill_box .skill_left ul li p {
+  font-size: 20px;
 }
 
 @media (max-width: 1280px) {
