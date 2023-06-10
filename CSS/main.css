@@ -277,6 +277,14 @@ h5 {
   #profile .row .profile_img img {
     display: block;
     width: 100%;
-    height: 470px;
+    height: 100%;
+  }
+  #profile .row .about_me {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  #profile .education {
+    margin-top: 30px;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
