@@ -265,6 +265,7 @@ h5 {
   position: relative;
   display: flex;
   align-items: center;
+  padding: 5px 10px;
 }
 #skill .skill_box .skill_right > div .skill_header img {
   height: 75px;
