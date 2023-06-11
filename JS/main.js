@@ -45,6 +45,7 @@ setTimeout(typing, 1500);
 
 
 
+//퍼센트올라가는거
 const percent = document.querySelectorAll('.percent');
 percent.forEach((item, idx) => {
   if (idx === 0) {
@@ -83,3 +84,28 @@ function countingType1(value, num) {
     }
   }
 }
+
+
+//프로젝트 스와이퍼
+const projectSwiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
+    }
+  }
+});

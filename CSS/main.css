@@ -262,10 +262,10 @@ h5 {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 15px;
 }
 #skill .skill_box .skill_right > div .skill_header img {
-  height: 75px;
+  width: 130px;
 }
 #skill .skill_box .skill_right > div .skill_header p {
   font-size: 32px;
@@ -281,8 +281,21 @@ h5 {
 }
 #skill .skill_box .skill_right > div .skill_text p {
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 18px;
 }
+
+#project .project-Swiper {
+  margin: 0 60px;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide {
+  overflow: hidden;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 0 5px #555;
+}
+
 @media (max-width: 1280px) {
   #intro .intro_box span {
     font-size: 40px;
@@ -370,5 +383,23 @@ h5 {
   }
   #skill .skill_box .skill_right {
     width: 100%;
+    margin-top: 20px;
+  }
+  #skill .skill_box .skill_right > div .skill_header img {
+    width: 80px;
+  }
+  #skill .skill_box .skill_right > div .skill_header p {
+    font-size: 22px;
+  }
+  #project .project-Swiper {
+    margin: 0;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide {
+    overflow: hidden;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 5px #555;
   }
 }/*# sourceMappingURL=main.css.map */
