@@ -277,7 +277,6 @@ h5 {
 
   .skill_box {
     display: flex;
-    justify-content: space-between;
 
     .skill_left {
 
@@ -308,13 +307,58 @@ h5 {
 
         }
       }
-
-
-
-
-
     }
 
+    .skill_right {
+      width: 75%;
+
+      >div {
+        background-color: rgba(248, 248, 248, 1);
+        border: 1px solid #000;
+        cursor: pointer;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .skill_header {
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 75px;
+          }
+
+          p {
+            font-size: 32px;
+            font-weight: 700;
+          }
+
+          i {
+            position: absolute;
+            font-size: 25px;
+            right: 20px;
+          }
+        }
+
+        .skill_text {
+          overflow: hidden;
+
+          p {
+            padding: 15px 30px;
+            font-size: 16px;
+          }
+        }
+
+
+      }
+
+      ul {
+        li {}
+      }
+    }
   }
 }
 
@@ -410,7 +454,9 @@ h5 {
 
   .container {
     width: 100%;
-    margin: auto;
+    margin: 0;
+    padding: 0 40px;
+
   }
 
   #profile {
@@ -423,7 +469,7 @@ h5 {
       }
 
       .profile_img {
-        width: calc(100% - 80px);
+        width: 100%;
         margin: 0 auto;
         padding: 0;
 
@@ -435,12 +481,22 @@ h5 {
       }
 
       .about_me {
-        margin: 20px 0px 20px 40px;
+        margin: 20px 0;
       }
     }
 
     .education {
-      margin: 0 0 0 40px;
+      margin: 0;
+    }
+  }
+
+  #skill {
+    .skill_box {
+      flex-direction: column;
+
+      .skill_right {
+        width: 100%;
+      }
     }
   }
 }
