@@ -265,6 +265,7 @@ h5 {
 }
 
 
+//능력사항
 #skill {
   padding: 60px 0;
 
@@ -308,7 +309,6 @@ h5 {
       >div {
         background-color: rgba(248, 248, 248, 1);
         border: 1px solid #000;
-        cursor: pointer;
         margin-bottom: 15px;
 
         &:last-child {
@@ -320,6 +320,7 @@ h5 {
           display: flex;
           align-items: center;
           padding: 5px 15px;
+          cursor: pointer;
 
           img {
             width: 130px;
@@ -350,7 +351,12 @@ h5 {
   }
 }
 
+
+
+//프로젝트
 #project {
+  padding: 60px 0;
+
   .project-Swiper {
     margin: 0 60px;
 
@@ -370,6 +376,58 @@ h5 {
   }
 }
 
+
+//contact
+#contact {
+  margin: 80px 0;
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  .contact_box {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 100px 80px 100px;
+    border: 2px solid #777;
+
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+          justify-content: center;
+          padding-top: 20px;
+
+          p {
+            font-size: 30px;
+            font-weight: 700;
+          }
+        }
+
+        img {
+          width: 50px;
+          height: 35px;
+          padding-right: 10px;
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 28px;
+        }
+
+        p,
+        a {
+          font-size: 26px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
 
 
 //반응형 코드
