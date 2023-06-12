@@ -181,18 +181,18 @@ h5 {
 }
 #intro .intro_box .down {
   position: absolute;
-  bottom: 70px;
+  bottom: 75px;
   animation: ani 1.5s infinite;
 }
 @keyframes ani {
   0% {
-    bottom: 70px;
+    bottom: 75px;
   }
   50% {
-    bottom: 40px;
+    bottom: 50px;
   }
   100% {
-    bottom: 70px;
+    bottom: 75px;
   }
 }
 #intro .intro_box .down .scroll {
@@ -232,15 +232,18 @@ h5 {
 }
 #profile .row p,
 #profile .row a {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 #profile .row .tit {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   color: #000;
 }
 #profile .row .profile_img {
   width: 380px;
+  border: 1px solid #ccc;
+  overflow: hidden;
 }
 #profile .row .profile_img img {
   width: 100%;
@@ -486,6 +489,8 @@ h5 {
   }
   #profile .row {
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   #profile .row p,
   #profile .row a {
@@ -503,6 +508,12 @@ h5 {
   }
   #profile .row .about_me {
     margin: 20px 0;
+  }
+  #profile .row .about_me ul li {
+    display: block;
+  }
+  #profile .row .about_me ul li p {
+    padding: 0;
   }
   #profile .education {
     margin: 0;

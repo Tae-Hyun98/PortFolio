@@ -209,20 +209,20 @@ h5 {
 
     .down {
       position: absolute;
-      bottom: 70px;
+      bottom: 75px;
       animation: ani 1.5s infinite;
 
       @keyframes ani {
         0% {
-          bottom: 70px;
+          bottom: 75px;
         }
 
         50% {
-          bottom: 40px;
+          bottom: 50px;
         }
 
         100% {
-          bottom: 70px;
+          bottom: 75px;
         }
       }
 
@@ -270,17 +270,20 @@ h5 {
 
     p,
     a {
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 400;
     }
 
     .tit {
       font-weight: 700;
-      font-size: 24px;
+      font-size: 22px;
       color: #000;
     }
 
     .profile_img {
       width: 380px;
+      border: 1px solid #ccc;
+      overflow: hidden;
 
       img {
         width: 100%;
@@ -633,6 +636,8 @@ h5 {
   #profile {
     .row {
       flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
 
       p,
       a {
@@ -653,6 +658,16 @@ h5 {
 
       .about_me {
         margin: 20px 0;
+
+        ul {
+          li {
+            display: block;
+
+            p {
+              padding: 0;
+            }
+          }
+        }
       }
     }
 
