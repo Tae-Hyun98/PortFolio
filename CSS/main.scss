@@ -50,7 +50,7 @@ h5 {
   top: 0;
   left: 0;
   background: none;
-  background-color: rgba($color: #ccc, $alpha: 0.9);
+  background-color: transparent;
   z-index: 9999;
 
   ul {
@@ -92,8 +92,9 @@ h5 {
   display: flex;
   width: 100%;
   height: 100vh;
-  background: url(../images/background.png);
+  background: url(../images/bg_prdInfo_top.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   overflow: hidden;
 
@@ -319,15 +320,16 @@ h5 {
           position: relative;
           display: flex;
           align-items: center;
-          padding: 5px 15px;
+          padding: 10px 20px;
           cursor: pointer;
 
           img {
-            width: 130px;
+            width: 60px;
+            padding-right: 15px;
           }
 
           p {
-            font-size: 32px;
+            font-size: 26px;
             font-weight: 700;
           }
 
@@ -342,7 +344,7 @@ h5 {
           overflow: hidden;
 
           p {
-            padding: 15px 30px;
+            padding: 15px 20px;
             font-size: 18px;
           }
         }
@@ -365,13 +367,32 @@ h5 {
       .swiper-slide {
         overflow: hidden;
 
+        .prject_box {
 
-        img {
-          width: 100%;
-          height: 400px;
-          box-shadow: 0 0 5px #555;
+          .project_img {
+            img {
+              position: relative;
+              width: 100%;
+              height: 700px;
+            }
+
+            p {
+              position: absolute;
+              width: 100%;
+              top: 0;
+              left: 0;
+
+              img {
+                width: 100%;
+                height: 530px;
+                padding: 10px;
+              }
+            }
+          }
         }
       }
+
+
     }
   }
 }
@@ -379,9 +400,15 @@ h5 {
 
 //contact
 #contact {
-  margin: 80px 0;
+  background-color: #1f1f1f;
+  margin: 80px 0 0 0;
+  padding: 50px 0;
 
   h1 {
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 40px;
+    color: green;
     padding-bottom: 20px;
   }
 
@@ -389,7 +416,26 @@ h5 {
     width: 900px;
     margin: 0 auto;
     padding: 20px 100px 80px 100px;
-    border: 2px solid #777;
+    background-color: #fff;
+    transition: .1s;
+    animation: ania 2s infinite;
+    box-shadow: 0 0 15px #eee;
+
+    @keyframes ania {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    &:hover {}
 
     ul {
       li {
