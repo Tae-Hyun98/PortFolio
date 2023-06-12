@@ -104,7 +104,7 @@ h5 {
 
     &::after {
       position: absolute;
-      top: 17px;
+      top: 19px;
       left: 27px;
       content: '';
       display: block;
@@ -154,7 +154,7 @@ h5 {
       .under {
         position: relative;
         font-size: 60px;
-        color:rgba(151, 19, 228, 0.87);
+        color: rgba(151, 19, 228, 0.87);
         text-shadow: 2px 2px #000, 3px 3px #000;
       }
 
@@ -445,9 +445,10 @@ h5 {
               left: 0;
 
               img {
-                width: 100%;
+                width: 90%;
                 height: 530px;
-                padding: 10px;
+                margin: 0 auto;
+                padding: 15px 0px;
               }
             }
           }
@@ -461,7 +462,7 @@ h5 {
 
 //contact
 #contact {
-  background-color: #1f1f1f;
+  background-color: #053d5c;
   padding: 80px 0;
 
   h1 {
@@ -494,8 +495,6 @@ h5 {
         transform: translateY(0);
       }
     }
-
-    &:hover {}
 
     ul {
       li {
