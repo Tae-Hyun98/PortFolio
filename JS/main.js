@@ -58,6 +58,8 @@ percent.forEach((item, idx) => {
     countingType1(percent[idx], 90)
   } else if (idx === 4) {
     countingType1(percent[idx], 90)
+  } else if (idx === 5) {
+    countingType1(percent[idx], 50)
   }
 })
 
@@ -84,6 +86,20 @@ function countingType1(value, num) {
     }
   }
 }
+
+
+
+//스킬클릭시 다운
+/* const skillClick = document.querySelectorAll('.skill_header');
+const skillText = document.querySelectorAll('.skill_text');
+
+skillClick.forEach((item, idx) => {
+  item.addEventListener('click', () => {
+      skillText[idx].sli
+
+  })
+}) */
+
 
 
 //프로젝트 스와이퍼

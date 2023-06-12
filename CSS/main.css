@@ -275,9 +275,13 @@ h5 {
 
 #skill {
   margin: 0 0 100px 0;
+  padding: 50px 0;
 }
 #skill .skill_box {
   display: flex;
+}
+#skill .skill_box .skill_left h2 {
+  font-size: 35px;
 }
 #skill .skill_box .skill_left ul {
   display: flex;
@@ -288,26 +292,27 @@ h5 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   line-height: 2;
   text-align: center;
   border: 1px solid black;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 #skill .skill_box .skill_left ul li:last-child {
   margin-right: 0;
 }
 #skill .skill_box .skill_left ul li p {
-  font-size: 20px;
+  font-size: 24px;
 }
 #skill .skill_box .skill_right {
   width: 75%;
 }
 #skill .skill_box .skill_right > div {
   background-color: rgb(248, 248, 248);
-  border: 1px solid #000;
+  border: 1px solid #777;
   margin-bottom: 15px;
 }
 #skill .skill_box .skill_right > div:last-child {
@@ -317,7 +322,7 @@ h5 {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 30px;
   cursor: pointer;
 }
 #skill .skill_box .skill_right > div .skill_header img {
@@ -335,6 +340,8 @@ h5 {
 }
 #skill .skill_box .skill_right > div .skill_text {
   overflow: hidden;
+  height: 0;
+  transition: height 0.3s;
 }
 #skill .skill_box .skill_right > div .skill_text p {
   padding: 15px 20px;
@@ -369,7 +376,7 @@ h5 {
 }
 
 #contact {
-  background-color: #053d5c;
+  background-color: rgba(5, 61, 92, 0.8509803922);
   padding: 80px 0;
 }
 #contact h1 {
