@@ -74,22 +74,53 @@ h5 {
 .container h1 {
   text-align: center;
   font-size: 55px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   color: green;
 }
 
 #intro {
+  position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
-  background: url(../images/bg_prdInfo_top.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../images/141538b38ba7a798a78c9dd2c55f79d7.png);
   background-size: cover;
-  overflow: hidden;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+#intro .intro_img {
+  position: relative;
+}
+#intro .intro_img::after {
+  position: absolute;
+  top: 17px;
+  left: 27px;
+  content: "";
+  display: block;
+  width: 325px;
+  height: 325px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff;
+  animation: moonani 30s infinite linear;
+  opacity: 0.7;
+}
+#intro .intro_img img {
+  position: absolute;
+  top: -45px;
+  left: -110px;
+  width: 600px;
+  animation: moonani 30s infinite linear;
+  opacity: 0.9;
+}
+@keyframes moonani {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 #intro .intro_box {
+  position: relative;
   height: 100%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,11 +130,14 @@ h5 {
   font-size: 50px;
   font-weight: 700;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px #000, 3px 3px #000;
 }
 #intro .intro_box span .under {
   position: relative;
   font-size: 60px;
+  color: rgba(151, 19, 228, 0.87);
+  text-shadow: 2px 2px #000, 3px 3px #000;
 }
 #intro .intro_box span .under::before {
   content: "";
@@ -147,44 +181,53 @@ h5 {
 }
 #intro .intro_box .down {
   position: absolute;
-  bottom: 60px;
-  animation: ani 2s infinite;
+  bottom: 70px;
+  animation: ani 1.5s infinite;
 }
 @keyframes ani {
   0% {
-    bottom: 60px;
+    bottom: 70px;
   }
-  40% {
+  50% {
     bottom: 40px;
   }
   100% {
-    bottom: 60px;
+    bottom: 70px;
   }
 }
-#intro .intro_box .down span,
-#intro .intro_box .down i {
+#intro .intro_box .down .scroll {
+  position: absolute;
+  top: -70px;
+  left: -3px;
+  width: 40px;
+  height: 60px;
+  border-radius: 30px;
+  border: 5px solid #fff;
+}
+#intro .intro_box .down .scroll::after {
+  content: "";
+  position: absolute;
+  left: 45%;
   display: block;
-  text-align: center;
-  color: #ccc;
+  width: 3px;
+  height: 25px;
+  background-color: #fff;
 }
-#intro .intro_box .down .scroll_text span {
-  line-height: 25px;
-  font-size: 26px;
-}
-#intro .intro_box .down .down_icon {
-  padding-top: 10px;
-}
-#intro .intro_box .down .down_icon i {
+#intro .intro_box .down i {
+  padding-top: 5px;
   font-size: 34px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 20px;
+  display: block;
+  color: #fff;
 }
 
 #profile {
-  padding: 60px 0;
+  margin: 80px 0 120px 0;
 }
 #profile .row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 #profile .row p,
@@ -192,34 +235,43 @@ h5 {
   font-size: 20px;
 }
 #profile .row .tit {
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 24px;
   color: #000;
 }
 #profile .row .profile_img {
   width: 380px;
-  padding-top: 30px;
 }
 #profile .row .profile_img img {
-  display: block;
   width: 100%;
-  height: 500px;
-}
-#profile .row .about_me {
-  margin-left: 20px;
+  height: 490px;
 }
 #profile .row .about_me ul li {
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+#profile .row .about_me ul li p {
+  padding-left: 5px;
+}
+#profile .row .about_me ul li p.tit {
+  padding-left: 0;
+}
+#profile .row .about_me ul li:last-child {
+  margin-bottom: 0;
 }
 #profile .row .education p {
   margin-bottom: 5px;
 }
+#profile .row .education p .tit {
+  margin-bottom: 10px;
+}
 #profile .row .education .certificate {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #skill {
-  padding: 60px 0;
+  margin: 0 0 100px 0;
 }
 #skill .skill_box {
   display: flex;
@@ -287,7 +339,7 @@ h5 {
 }
 
 #project {
-  padding: 60px 0;
+  margin: 0 0 100px 0;
 }
 #project .project-Swiper {
   margin: 0 60px;
@@ -314,8 +366,7 @@ h5 {
 
 #contact {
   background-color: #1f1f1f;
-  margin: 80px 0 0 0;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 #contact h1 {
   text-align: center;
