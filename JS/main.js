@@ -89,16 +89,66 @@ function countingType1(value, num) {
 
 
 
-//스킬클릭시 다운
-/* const skillClick = document.querySelectorAll('.skill_header');
-const skillText = document.querySelectorAll('.skill_text');
-
-skillClick.forEach((item, idx) => {
-  item.addEventListener('click', () => {
-      skillText[idx].sli
-
+//마우스클릭시아래로
+const profile=document.getElementById('profile');
+const down=document.querySelector('.down');
+down.addEventListener('click',()=>{
+  window.scrollTo({
+    top: profile.offsetTop-150,
+    behavior: 'smooth'
   })
-}) */
+
+})
+
+//탑버튼
+const Top = document.getElementById('top');
+
+Top.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})
+
+//헤더 스크롤
+const header = document.querySelector('.header');
+const intro = document.getElementById('intro');
+let scroll = intro.offsetHeight;
+window.addEventListener('scroll', () => {
+  if (scrollY >= (scroll - 100)) {
+    header.classList.add('on');
+  } else if (scrollY === 0) {
+    header.classList.add('scr_top');
+  } else {
+    header.classList.remove('on')
+    header.classList.remove('scr_top');
+  }
+});
+
+const project = document.getElementById('project');
+const contact = document.getElementById('contact');
+const li = document.querySelectorAll('.header ul li a');
+
+li.forEach((item,idx)=>{
+  item.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let a=e.currentTarget.value
+    console.log(a)
+    
+  })
+})
+li[3].addEventListener('click',()=>{
+  window.scrollTo({
+    top:project.offsetTop,
+    behavior:"smooth"
+  })
+})
+li[4].addEventListener('click',()=>{
+  window.scrollTo({
+    top:contact.offsetTop,
+    behavior:"smooth"
+  })
+})
 
 
 

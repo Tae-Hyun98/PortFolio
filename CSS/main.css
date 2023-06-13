@@ -51,6 +51,15 @@ h5 {
   background: none;
   background-color: transparent;
   z-index: 9999;
+  transition: 0.3s;
+  transform: translateY(-100%);
+}
+.header.on {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(0%);
+}
+.header.scr_top {
+  transform: translateY(0%);
 }
 .header ul {
   display: flex;
@@ -183,6 +192,7 @@ h5 {
   position: absolute;
   bottom: 75px;
   animation: ani 1.5s infinite;
+  cursor: pointer;
 }
 @keyframes ani {
   0% {
@@ -378,6 +388,9 @@ h5 {
 #contact {
   background-color: rgba(5, 61, 92, 0.8509803922);
   padding: 80px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 #contact h1 {
   text-align: center;
@@ -433,6 +446,22 @@ h5 {
 #contact .contact_box ul li a {
   font-size: 26px;
   font-weight: 400;
+}
+
+#top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+#top i {
+  font-size: 50px;
+  transition: 0.3s;
+}
+#top i:hover {
+  color: blue;
 }
 
 @media (max-width: 1280px) {

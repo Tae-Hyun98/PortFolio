@@ -52,6 +52,17 @@ h5 {
   background: none;
   background-color: transparent;
   z-index: 9999;
+  transition: .3s;
+  transform: translateY(-100%);
+
+  &.on {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    transform: translateY(0%);
+  }
+
+  &.scr_top {
+    transform: translateY(0%);
+  }
 
   ul {
     display: flex;
@@ -211,6 +222,7 @@ h5 {
       position: absolute;
       bottom: 75px;
       animation: ani 1.5s infinite;
+      cursor: pointer;
 
       @keyframes ani {
         0% {
@@ -335,6 +347,7 @@ h5 {
 #skill {
   margin: 0 0 100px 0;
   padding: 50px 0;
+
   .skill_box {
     display: flex;
 
@@ -474,7 +487,9 @@ h5 {
 #contact {
   background-color: #053d5cd9;
   padding: 80px 0;
-
+  height: 100vh;
+  display: flex;
+  align-items: center;
   h1 {
     text-align: center;
     font-size: 55px;
@@ -544,6 +559,24 @@ h5 {
   }
 }
 
+#top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+
+  i {
+    font-size: 50px;
+    transition: .3s;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
 
 //반응형 코드
 @media (max-width:1280px) {
@@ -590,7 +623,7 @@ h5 {
       .down {
         position: absolute;
         animation: ani 2s infinite;
-
+        
         @keyframes ani {
           0% {
             bottom: 25px;
