@@ -90,23 +90,50 @@ function countingType1(value, num) {
 
 
 //마우스클릭시아래로
+const intro = document.getElementById('intro');
 const profile = document.getElementById('profile');
-const down = document.querySelector('.down');
-scroller(down, profile)
+const skill = document.getElementById('skill');
+const project = document.getElementById('project');
+const contact = document.getElementById('contact');
 
 
-function scroller(item, value) {
+const navEl = document.querySelectorAll('.navigation a');
+
+navEl.forEach((item, idx) => {
   item.addEventListener('click', () => {
-    gsap.to(window, 0.3, {
-      scrollTo: value
-    })
+    if (idx === 0) {
+      scroller(intro)
+    } else if (idx === 1) {
+      scroller(profile)
+    } else if (idx === 2) {
+      scroller(skill)
+    } else if (idx === 3) {
+      scroller(project)
+    } else if (idx === 4) {
+      scroller(contact)
+    }
   })
-}
+})
+
+
+const down = document.querySelector('.down');
+down.addEventListener('click', () => {
+  scroller(profile)
+})
 
 //탑버튼
 const Top = document.getElementById('top');
+Top.addEventListener('click', () => {
+  scroller(0)
 
-scroller(Top,0)
+})
+
+function scroller(value) {
+  gsap.to(window, 0.3, {
+    scrollTo: value
+  });
+}
+
 
 //헤더 스크롤
 const header = document.querySelector('.header');
@@ -137,7 +164,6 @@ const projectSwiper = new Swiper('.swiper', {
 
   breakpoints: {
     1024: {
-      spaceBetween: 30,
     }
   }
 });

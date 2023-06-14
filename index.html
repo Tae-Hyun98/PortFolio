@@ -32,13 +32,17 @@
   <div class="wrap">
     <!--------- header ----------->
     <header class="header">
-      <ul>
-        <li><a href="#!" class="on" value="intro">Intro</a></li>
-        <li><a href="#!">Profile</a></li>
-        <li><a href="#!">Skill</a></li>
-        <li><a href="#!">Project</a></li>
-        <li><a href="#!">Contact</a></li>
-      </ul>
+      <h1>Taehyun's Portfolio</h1>
+      <nav>
+        <div class="navigation">
+          <a href="#!">Intro</a>
+          <a href="#!">Profile</a>
+          <a href="#!">Skill</a>
+          <a href="#!">Project</a>
+          <a href="#!">Contact</a>
+        </div>
+      </nav>
+
     </header>
 
     <!--------- intro ---------->
@@ -47,27 +51,25 @@
         <img src="./images/moon.png" alt="moon">
       </div>
 
-      <div class="container">
-        <div class="intro_box">
-          <span>안녕하세요.</span>
-          <span>
-            소통과 개발을 좋아하는
-            <span class="under">권태현</span>입니다.
-          </span>
+      <div class="intro_box">
+        <span>안녕하세요.</span>
+        <span>
+          소통과 개발을 좋아하는
+          <span class="under">권태현</span>입니다.
+        </span>
 
-          <hr class="bar">
+        <hr class="bar">
 
-          <div class="typing">
-            <span>저는 </span>
-            <span class="text"></span>
-            <span> 개발자입니다.</span>
-          </div>
+        <div class="typing">
+          <span>저는 </span>
+          <span class="text"></span>
+          <span> 개발자입니다.</span>
+        </div>
 
-          <div class="down">
-            <span class="scroll"></span>
-            <i class="fas fa-chevron-down"></i>
-            <i class="fas fa-chevron-down"></i>
-          </div>
+        <div class="down">
+          <span class="scroll"></span>
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-down"></i>
         </div>
       </div>
     </section>
@@ -152,12 +154,6 @@
                   <br />
                   대구가톨릭대학교 컴퓨터공학전공(3.75/4.5)
                 </p>
-
-
-
-
-
-
               </li>
             </ul>
 
@@ -350,12 +346,12 @@
         <h1>Project</h1>
 
         <div class="swiper project-Swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+
               <div class="prject_box">
                 <div class="project_img">
-                  <img src="./images/mockup_desktop.png" alt="">
-                  <p><img src="./images/ediya.gif" alt=""></p>
+                  <img src="./images/귀여운거.png" alt="">
                 </div>
 
                 <div class="description">
@@ -364,9 +360,9 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <div class="swiper-slide">
+            <li class="swiper-slide">
               <div class="prject_box">
                 <div class="project_img">
                   <img src="./images/Fila.gif" alt="ediya">
@@ -378,9 +374,9 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <div class="swiper-slide">
+            <li class="swiper-slide">
               <div class="prject_box">
                 <div class="project_img">
                   1
@@ -392,9 +388,11 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">Slide 3</div>
-          </div>
+            </li>
+
+            <li class="swiper-slide">Slide 3</li>
+          </ul>
+          
           <div class="swiper-pagination"></div>
 
           <div class="swiper-button-prev"></div>
