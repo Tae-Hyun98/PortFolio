@@ -58,9 +58,6 @@ h5 {
   background-color: rgba(0, 0, 0, 0.8);
   transform: translateY(0%);
 }
-.header.scr_top {
-  transform: translateY(0%);
-}
 .header ul {
   display: flex;
   justify-content: center;
@@ -70,7 +67,7 @@ h5 {
   color: #fff;
   font-weight: 700;
   font-size: 24px;
-  padding: 20px 25px;
+  padding: 15px 25px;
 }
 .header ul li a.on {
   color: blue;
@@ -82,7 +79,7 @@ h5 {
 }
 .container h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 50px;
   padding-bottom: 50px;
   color: green;
 }
@@ -92,7 +89,7 @@ h5 {
   display: flex;
   width: 100%;
   height: 100vh;
-  background: url(../images/141538b38ba7a798a78c9dd2c55f79d7.png);
+  background: url(../images/intro_bg.png);
   background-size: cover;
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -136,7 +133,7 @@ h5 {
   align-items: center;
 }
 #intro .intro_box span {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 1px;
@@ -144,7 +141,7 @@ h5 {
 }
 #intro .intro_box span .under {
   position: relative;
-  font-size: 70px;
+  font-size: 60px;
   color: cornflowerblue;
   text-shadow: 2px 2px #000, 3px 3px #000;
 }
@@ -190,25 +187,23 @@ h5 {
 }
 #intro .intro_box .down {
   position: absolute;
-  bottom: 75px;
+  bottom: 85px;
   animation: ani 1.5s infinite;
   cursor: pointer;
 }
 @keyframes ani {
   0% {
-    bottom: 75px;
+    transform: translateY(0%);
   }
   50% {
-    bottom: 50px;
+    transform: translateY(30%);
   }
   100% {
-    bottom: 75px;
+    transform: translateY(0%);
   }
 }
 #intro .intro_box .down .scroll {
-  position: absolute;
-  top: -70px;
-  left: -3px;
+  display: block;
   width: 40px;
   height: 60px;
   border-radius: 30px;
@@ -226,14 +221,14 @@ h5 {
 #intro .intro_box .down i {
   padding-top: 5px;
   font-size: 34px;
-  font-weight: 700;
+  text-align: center;
   line-height: 20px;
   display: block;
   color: #fff;
 }
 
 #profile {
-  margin: 80px 0 120px 0;
+  padding: 80px 0 120px 0;
 }
 #profile .row {
   display: flex;
@@ -284,8 +279,7 @@ h5 {
 }
 
 #skill {
-  margin: 0 0 100px 0;
-  padding: 50px 0;
+  padding: 80px 0 120px 0;
 }
 #skill .skill_box {
   display: flex;

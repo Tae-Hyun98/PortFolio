@@ -90,37 +90,32 @@ function countingType1(value, num) {
 
 
 //마우스클릭시아래로
-const profile=document.getElementById('profile');
-const down=document.querySelector('.down');
-down.addEventListener('click',()=>{
-  window.scrollTo({
-    top: profile.offsetTop-150,
-    behavior: 'smooth'
-  })
+const profile = document.getElementById('profile');
+const down = document.querySelector('.down');
+scroller(down, profile)
 
-})
+
+function scroller(item, value) {
+  item.addEventListener('click', () => {
+    gsap.to(window, 0.3, {
+      scrollTo: value
+    })
+  })
+}
 
 //탑버튼
 const Top = document.getElementById('top');
 
-Top.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
-})
+scroller(Top,0)
 
 //헤더 스크롤
 const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
-  if (scrollY >= (scroll - 100)) {
+  if (window.scrollY > 0) {
     header.classList.add('on');
-  } else if (scrollY === 0) {
-    header.classList.add('scr_top');
   } else {
     header.classList.remove('on')
-    header.classList.remove('scr_top');
   }
 });
 
