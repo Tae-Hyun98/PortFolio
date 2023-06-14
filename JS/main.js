@@ -112,8 +112,7 @@ Top.addEventListener('click', () => {
 
 //헤더 스크롤
 const header = document.querySelector('.header');
-const intro = document.getElementById('intro');
-let scroll = intro.offsetHeight;
+
 window.addEventListener('scroll', () => {
   if (scrollY >= (scroll - 100)) {
     header.classList.add('on');
@@ -125,30 +124,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-const project = document.getElementById('project');
-const contact = document.getElementById('contact');
-const li = document.querySelectorAll('.header ul li a');
-
-li.forEach((item,idx)=>{
-  item.addEventListener('click',(e)=>{
-    e.preventDefault();
-    let a=e.currentTarget.value
-    console.log(a)
-    
-  })
-})
-li[3].addEventListener('click',()=>{
-  window.scrollTo({
-    top:project.offsetTop,
-    behavior:"smooth"
-  })
-})
-li[4].addEventListener('click',()=>{
-  window.scrollTo({
-    top:contact.offsetTop,
-    behavior:"smooth"
-  })
-})
 
 
 
