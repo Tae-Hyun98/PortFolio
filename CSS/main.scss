@@ -111,7 +111,7 @@ h5 {
 
   .intro_img {
     position: relative;
-
+    opacity: 0;
     &::after {
       position: absolute;
       top: 19px;
@@ -153,7 +153,13 @@ h5 {
     justify-content: center;
     align-items: center;
 
+    p {
+      opacity: 0;
+    }
+
+    p,
     span {
+      text-align: center;
       font-size: 45px;
       font-weight: 700;
       color: #fff;
@@ -420,7 +426,6 @@ h5 {
 
         .skill_text {
           overflow: hidden;
-          height: 0;
           transition: height 0.3s;
 
           p {

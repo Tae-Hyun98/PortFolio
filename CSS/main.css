@@ -99,6 +99,7 @@ h5 {
 }
 #intro .intro_img {
   position: relative;
+  opacity: 0;
 }
 #intro .intro_img::after {
   position: absolute;
@@ -137,19 +138,26 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+#intro .intro_box p {
+  opacity: 0;
+}
+#intro .intro_box p,
 #intro .intro_box span {
+  text-align: center;
   font-size: 45px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 1px;
   text-shadow: 1px 1px #000, 3px 3px #000;
 }
+#intro .intro_box p .under,
 #intro .intro_box span .under {
   position: relative;
   font-size: 60px;
   color: cornflowerblue;
   text-shadow: 2px 2px #000, 3px 3px #000;
 }
+#intro .intro_box p .under::before,
 #intro .intro_box span .under::before {
   content: "";
   display: block;
@@ -349,7 +357,6 @@ h5 {
 }
 #skill .skill_box .skill_right > div .skill_text {
   overflow: hidden;
-  height: 0;
   transition: height 0.3s;
 }
 #skill .skill_box .skill_right > div .skill_text p {
