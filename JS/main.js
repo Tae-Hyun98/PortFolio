@@ -186,7 +186,7 @@ gsap.from(project, 1, {
 //숫자 올라가는거
 const percent = document.querySelectorAll(".percent");
 
-gsap.from(percent, 3, {
+gsap.from(percent, 2, {
   textContent: 0, //시작숫자
   scrollTrigger: {
     trigger: skill,
