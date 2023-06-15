@@ -112,6 +112,7 @@ h5 {
   .intro_img {
     position: relative;
     opacity: 0;
+
     &::after {
       position: absolute;
       top: 19px;
@@ -170,10 +171,11 @@ h5 {
         position: relative;
         font-size: 60px;
         color: cornflowerblue;
-        text-shadow: 2px 2px #000, 3px 3px #000;
+        text-shadow: 10px 5px 5px #000;
+        padding-right: 15px;
       }
 
-      .under::before {
+      /* .under::before {
         content: '';
         display: block;
         position: absolute;
@@ -182,7 +184,7 @@ h5 {
         width: 100%;
         height: 5px;
         background-color: yellow;
-      }
+      } */
     }
 
     .bar {
@@ -275,7 +277,7 @@ h5 {
 
 // 프로필
 #profile {
-  padding: 100px 0 150px;
+  padding: 100px 0 120px;
 
   .row {
     display: flex;
@@ -347,49 +349,74 @@ h5 {
 
 //능력사항
 #skill {
-  padding: 80px 0 150px 0;
+  padding: 100px 0 150px 0;
 
   .skill_box {
     display: flex;
 
     .skill_left {
+      display: flex;
 
       h2 {
-        font-size: 35px;
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
       }
 
       ul {
         display: flex;
         flex-wrap: wrap;
+        padding: 0 30px;
 
         li {
           display: flex;
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          width: 200px;
-          height: 200px;
-          line-height: 2;
-          text-align: center;
-          border: 1px solid black;
+          width: 180px;
+          height: 180px;
           border-radius: 50%;
-          margin-right: 15px;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
+          margin-right: 40px;
+          box-shadow: 0 0 10px blueviolet;
 
-          &:last-child {
+          &:nth-child(2n) {
             margin-right: 0;
           }
 
-          p {
-            font-size: 24px;
+          img {
+            width: 50px;
           }
 
+          p {
+            font-size: 18px;
+            font-weight: 700;
+
+            &.percent {
+              font-size: 16px;
+              color: blue;
+            }
+          }
+
+        }
+      }
+
+      .tools {
+        ul {
+          display: flex;
+          justify-content: center;
+
+          li {
+            margin-right: 0;
+          }
         }
       }
     }
 
     .skill_right {
-      width: 75%;
+      margin-top: 50px;
+      padding-left: 50px;
+      width: 100%;
 
       >div {
         background-color: rgba(248, 248, 248, 1);
@@ -404,11 +431,11 @@ h5 {
           position: relative;
           display: flex;
           align-items: center;
-          padding: 15px 30px;
+          padding: 15px 25px;
           cursor: pointer;
 
           img {
-            width: 60px;
+            width: 40px;
             padding-right: 15px;
           }
 
@@ -420,16 +447,13 @@ h5 {
           i {
             position: absolute;
             font-size: 25px;
-            right: 20px;
+            right: 25px;
           }
         }
 
         .skill_text {
-          overflow: hidden;
-          transition: height 0.3s;
-
           p {
-            padding: 15px 20px;
+            padding: 0px 25px 15px;
             font-size: 18px;
           }
         }
