@@ -105,7 +105,6 @@ const profile = document.getElementById("profile");
 const skill = document.getElementById("skill");
 const project = document.getElementById("project");
 const contact = document.getElementById("contact");
-const section = window.scrollY + skill.getBoundingClientRect().top;
 
 const navEl = document.querySelectorAll(".navigation a");
 
@@ -138,8 +137,11 @@ Top.addEventListener("click", () => {
 });
 
 function scroller(value) {
-  gsap.to(window, 0.3, {
-    scrollTo: value,
+  gsap.to(window, 0.4, {
+    scrollTo: {
+      y: value,
+      offsetY: 50
+    },
   });
 }
 
@@ -148,52 +150,33 @@ const profileImg = document.querySelector('.profile_img');
 const aboutMe = document.querySelector('.about_me');
 const history = document.querySelector('.history');
 const certificate = document.querySelector('.certificate');
+const row=document.querySelector('.row')
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(profileImg, 1, {
+gsap.from(row, 1, {
   scrollTrigger: {
-    trigger: intro,
-    start: 'bottom'
+    trigger: profile,
+    start: 'top 50%'
   },
   y: 100,
   opacity: 0
 })
 
-gsap.from(aboutMe, 1, {
-  scrollTrigger: {
-    trigger: intro,
-    start: 'bottom'
-  },
-  y: 100,
-  opacity: 0,
-  delay: 0.3
-})
-
-gsap.from(history, 1, {
-  scrollTrigger: {
-    trigger: intro,
-    start: 'bottom'
-  },
-  y: 100,
-  opacity: 0,
-  delay: 0.3
-})
-
-gsap.from(certificate, 1, {
-  scrollTrigger: {
-    trigger: intro,
-    start: 'bottom'
-  },
-  y: 100,
-  opacity: 0,
-  delay: 0.5
-})
 
 gsap.from(skill, 1, {
   scrollTrigger: {
-    trigger: profile,
-    start: 'bottom',
+    trigger: skill,
+    start: 'top 50%',
+  },
+  y: 100,
+  opacity: 0,
+})
+
+gsap.from(project, 1, {
+  scrollTrigger: {
+    trigger: project,
+    start: 'top 50%',
   },
   y: 100,
   opacity: 0,
@@ -204,10 +187,10 @@ gsap.from(skill, 1, {
 const percent = document.querySelectorAll(".percent");
 
 gsap.from(percent, 3, {
-  textContent: 0,
+  textContent: 0, //시작숫자
   scrollTrigger: {
-    trigger: profile,
-    start: 'bottom',
+    trigger: skill,
+    start: 'top 40%',
   },
   stagger: {
     onUpdate: function () {

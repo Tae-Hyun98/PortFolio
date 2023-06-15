@@ -241,7 +241,7 @@ h5 {
 }
 
 #profile {
-  padding: 100px 0 120px;
+  padding: 120px 0;
 }
 #profile .row {
   display: flex;
@@ -292,7 +292,7 @@ h5 {
 }
 
 #skill {
-  padding: 100px 0 150px 0;
+  padding: 120px 0;
 }
 #skill .skill_box {
   display: flex;
@@ -382,7 +382,7 @@ h5 {
 }
 
 #project {
-  padding: 80px 0 100px 0;
+  padding: 120px 0;
 }
 #project .project-Swiper {
   margin: 0 50px;
