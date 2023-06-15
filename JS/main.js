@@ -48,46 +48,30 @@ function wait(time) {
 
 setTimeout(typing, 1500);
 
-//퍼센트올라가는거
-const percent = document.querySelectorAll(".percent");
-percent.forEach((item, idx) => {
-  if (idx === 0) {
-    countingType1(percent[idx], 100);
-  } else if (idx === 1) {
-    countingType1(percent[idx], 100);
-  } else if (idx === 2) {
-    countingType1(percent[idx], 90);
-  } else if (idx === 3) {
-    countingType1(percent[idx], 90);
-  } else if (idx === 4) {
-    countingType1(percent[idx], 90);
-  } else if (idx === 5) {
-    countingType1(percent[idx], 50);
-  }
-});
 
-function countingType1(value, num) {
-  if (num == 0) {
-    value.innerHTML = "0";
-  } else {
-    /* 입력한 숫자를 33번에 걸쳐 0부터 올림. */
-    const each = Math.ceil(num / 90);
-    let time = 0;
 
-    for (let i = 0; i <= num; i += each) {
-      setTimeout(() => {
-        value.innerHTML = i + "%";
-      }, 20 * time);
-      /* 딱 떨어지지 않는 숫자를 마지막에 그 숫자로 만들어주기 위함 */
-      if (i + each > this.maxNum1) {
-        setTimeout(() => {
-          value.innerHTML = num;
-        }, 20 * (time + 1));
-      }
-      time++;
-    }
-  }
-}
+// function countingType1(value, num) {
+//   if (num == 0) {
+//     value.innerHTML = "0";
+//   } else {
+//     /* 입력한 숫자를 33번에 걸쳐 0부터 올림. */
+//     const each = Math.ceil(num / 90);
+//     let time = 0;
+
+//     for (let i = 0; i <= num; i += each) {
+//       setTimeout(() => {
+//         value.innerHTML = i + "%";
+//       }, 20 * time);
+//       /* 딱 떨어지지 않는 숫자를 마지막에 그 숫자로 만들어주기 위함 */
+//       if (i + each > this.maxNum1) {
+//         setTimeout(() => {
+//           value.innerHTML = num;
+//         }, 20 * (time + 1));
+//       }
+//       time++;
+//     }
+//   }
+// }
 
 
 //헤더 스크롤
@@ -112,7 +96,7 @@ setTimeout(() => {
     opacity: 1,
   })
 
-}, 1000)
+}, 500)
 
 
 //마우스클릭시아래로
@@ -121,6 +105,7 @@ const profile = document.getElementById("profile");
 const skill = document.getElementById("skill");
 const project = document.getElementById("project");
 const contact = document.getElementById("contact");
+const section = window.scrollY + skill.getBoundingClientRect().top;
 
 const navEl = document.querySelectorAll(".navigation a");
 
@@ -158,7 +143,78 @@ function scroller(value) {
   });
 }
 
+//프로필 스르륵
+const profileImg = document.querySelector('.profile_img');
+const aboutMe = document.querySelector('.about_me');
+const history = document.querySelector('.history');
+const certificate = document.querySelector('.certificate');
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(profileImg, 1, {
+  scrollTrigger: {
+    trigger: intro,
+    start: 'bottom'
+  },
+  y: 100,
+  opacity: 0
+})
+
+gsap.from(aboutMe, 1, {
+  scrollTrigger: {
+    trigger: intro,
+    start: 'bottom'
+  },
+  y: 100,
+  opacity: 0,
+  delay: 0.3
+})
+
+gsap.from(history, 1, {
+  scrollTrigger: {
+    trigger: intro,
+    start: 'bottom'
+  },
+  y: 100,
+  opacity: 0,
+  delay: 0.3
+})
+
+gsap.from(certificate, 1, {
+  scrollTrigger: {
+    trigger: intro,
+    start: 'bottom'
+  },
+  y: 100,
+  opacity: 0,
+  delay: 0.5
+})
+
+gsap.from(skill, 1, {
+  scrollTrigger: {
+    trigger: profile,
+    start: 'bottom',
+  },
+  y: 100,
+  opacity: 0,
+})
+
+
+//숫자 올라가는거
+const percent = document.querySelectorAll(".percent");
+
+gsap.from(percent, 3, {
+  textContent: 0,
+  scrollTrigger: {
+    trigger: profile,
+    start: 'bottom',
+  },
+  stagger: {
+    onUpdate: function () {
+      this.targets()[0].innerHTML = Math.ceil(this.targets()[0].textContent) + '%';
+    }
+  }
+});
 
 
 
@@ -177,6 +233,7 @@ $(function () {
       $('.skill_header i').eq(idx).removeClass('fa-chevron-up').addClass('fa-chevron-down');
     }
   });
+
 });
 
 
