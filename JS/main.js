@@ -1,12 +1,17 @@
-const text = document.querySelector('.text');
+const text = document.querySelector(".text");
 
-const letters = ["프론트엔드", "배우는 것을 좋아하는", "끈기와 열정이 있는", "포기하지 않는"];
+const letters = [
+  "프론트엔드",
+  "배우는 것을 좋아하는",
+  "끈기와 열정이 있는",
+  "포기하지 않는",
+];
 
 let i = 0;
 
 // 타이핑 효과
 const typing = async () => {
-  const letter = letters[i].split('');
+  const letter = letters[i].split("");
 
   while (letter.length) {
     await wait(100);
@@ -18,11 +23,11 @@ const typing = async () => {
 
   // 지우는 효과
   remove();
-}
+};
 
 // 글자 지우는 효과
 const remove = async () => {
-  const letter = letters[i].split('');
+  const letter = letters[i].split("");
 
   while (letter.length) {
     await wait(80);
@@ -34,47 +39,44 @@ const remove = async () => {
   // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
   i = letters[i + 1] ? i + 1 : 0;
   typing();
-}
+};
 
 // 딜레이 기능
 function wait(time) {
-  return new Promise(res => setTimeout(res, time))
+  return new Promise((res) => setTimeout(res, time));
 }
 
 setTimeout(typing, 1500);
 
-
-
 //퍼센트올라가는거
-const percent = document.querySelectorAll('.percent');
+const percent = document.querySelectorAll(".percent");
 percent.forEach((item, idx) => {
   if (idx === 0) {
-    countingType1(percent[idx], 100)
+    countingType1(percent[idx], 100);
   } else if (idx === 1) {
-    countingType1(percent[idx], 100)
+    countingType1(percent[idx], 100);
   } else if (idx === 2) {
-    countingType1(percent[idx], 90)
+    countingType1(percent[idx], 90);
   } else if (idx === 3) {
-    countingType1(percent[idx], 90)
+    countingType1(percent[idx], 90);
   } else if (idx === 4) {
-    countingType1(percent[idx], 90)
+    countingType1(percent[idx], 90);
   } else if (idx === 5) {
-    countingType1(percent[idx], 50)
+    countingType1(percent[idx], 50);
   }
-})
+});
 
 function countingType1(value, num) {
-
   if (num == 0) {
-    value.innerHTML = '0';
+    value.innerHTML = "0";
   } else {
     /* 입력한 숫자를 33번에 걸쳐 0부터 올림. */
     const each = Math.ceil(num / 90);
-    let time = 0
+    let time = 0;
 
     for (let i = 0; i <= num; i += each) {
       setTimeout(() => {
-        value.innerHTML = i + '%';
+        value.innerHTML = i + "%";
       }, 20 * time);
       /* 딱 떨어지지 않는 숫자를 마지막에 그 숫자로 만들어주기 위함 */
       if (i + each > this.maxNum1) {
@@ -88,82 +90,110 @@ function countingType1(value, num) {
 }
 
 
-
-//마우스클릭시아래로
-const intro = document.getElementById('intro');
-const profile = document.getElementById('profile');
-const skill = document.getElementById('skill');
-const project = document.getElementById('project');
-const contact = document.getElementById('contact');
-
-
-const navEl = document.querySelectorAll('.navigation a');
-
-navEl.forEach((item, idx) => {
-  item.addEventListener('click', () => {
-    if (idx === 0) {
-      scroller(intro)
-    } else if (idx === 1) {
-      scroller(profile)
-    } else if (idx === 2) {
-      scroller(skill)
-    } else if (idx === 3) {
-      scroller(project)
-    } else if (idx === 4) {
-      scroller(contact)
-    }
-  })
-})
-
-
-const down = document.querySelector('.down');
-down.addEventListener('click', () => {
-  scroller(profile)
-})
-
-//탑버튼
-const Top = document.getElementById('top');
-Top.addEventListener('click', () => {
-  scroller(0)
-
-})
-
-function scroller(value) {
-  gsap.to(window, 0.3, {
-    scrollTo: value
-  });
-}
-
-
 //헤더 스크롤
-const header = document.querySelector('.header');
+const header = document.querySelector(".header");
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
-    header.classList.add('on');
+    header.classList.add("on");
   } else {
-    header.classList.remove('on')
+    header.classList.remove("on");
   }
 });
 
 
+const fade = document.querySelector('.intro_box p');
+const fadeImg = document.querySelector('.intro_img');
+setTimeout(() => {
+  gsap.to(fade, 3, {
+    opacity: 1,
+  })
+  gsap.to(fadeImg, 3, {
+    opacity: 1,
+  })
+
+}, 1000)
+
+
+//마우스클릭시아래로
+const intro = document.getElementById("intro");
+const profile = document.getElementById("profile");
+const skill = document.getElementById("skill");
+const project = document.getElementById("project");
+const contact = document.getElementById("contact");
+
+const navEl = document.querySelectorAll(".navigation a");
+
+navEl.forEach((item, idx) => {
+  item.addEventListener("click", () => {
+    if (idx === 0) {
+      scroller(intro);
+    } else if (idx === 1) {
+      scroller(profile);
+    } else if (idx === 2) {
+      scroller(skill);
+    } else if (idx === 3) {
+      scroller(project);
+    } else if (idx === 4) {
+      scroller(contact);
+    }
+  });
+});
+
+//마우스모양 클릭시 바로아래섹션
+const down = document.querySelector(".down");
+down.addEventListener("click", () => {
+  scroller(profile);
+});
+
+//탑버튼
+const Top = document.getElementById("top");
+Top.addEventListener("click", () => {
+  scroller(0);
+});
+
+function scroller(value) {
+  gsap.to(window, 0.3, {
+    scrollTo: value,
+  });
+}
+
+
+
+
+
+
+//skill 다운
+$(function () {
+  $(".skill_text p").hide();
+
+  $(".skill_header").click(function () {
+    let idx = $(".skill_header").index(this);
+    $(".skill_text p").eq(idx).stop().slideToggle(300);
+
+    if ($('.skill_header i').eq(idx).hasClass('fa-chevron-down')) {
+      $('.skill_header i').eq(idx).removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    } else {
+      $('.skill_header i').eq(idx).removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    }
+  });
+});
 
 
 //프로젝트 스와이퍼
-const projectSwiper = new Swiper('.swiper', {
+const projectSwiper = new Swiper(".swiper", {
   spaceBetween: 0,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   breakpoints: {
-    1024: {
-    }
-  }
+    1024: {},
+  },
 });
