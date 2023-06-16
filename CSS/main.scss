@@ -279,6 +279,7 @@ h5 {
 #profile {
   padding: 100px 0;
   border: 1px solid black;
+
   .row {
     display: flex;
     align-items: center;
@@ -351,6 +352,7 @@ h5 {
 #skill {
   padding: 100px 0;
   border: 1px solid black;
+
   .skill_box {
     display: flex;
 
@@ -385,15 +387,16 @@ h5 {
           }
 
           img {
-            width: 50px;
+            width: 60px;
           }
 
           p {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
+            padding: 5px 0;
 
             &.percent {
-              font-size: 16px;
+              font-size: 18px;
               color: blue;
             }
           }
@@ -469,13 +472,27 @@ h5 {
   padding: 120px 0;
 
   .project-Swiper {
-    margin: 0 50px;
+
+    .button {
+      position: absolute;
+      color: #000;
+      transform: translate(-50%,-50%);
+      left: 0;
+      z-index: 9999;
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+    }
+
+    .swiper-button-next {
+      left: auto;
+      right: 0;
+    }
 
     .swiper-wrapper {
-
       .swiper-slide {
-        overflow: hidden;
-
+        padding: 0 50px;
         .prject_box {
 
           .project_img {
@@ -483,6 +500,7 @@ h5 {
             img {
               position: relative;
               width: 100%;
+              height: 600px;
             }
 
             p {
