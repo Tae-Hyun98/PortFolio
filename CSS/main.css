@@ -241,7 +241,8 @@ h5 {
 }
 
 #profile {
-  padding: 120px 0;
+  padding: 100px 0;
+  border: 1px solid black;
 }
 #profile .row {
   display: flex;
@@ -292,7 +293,8 @@ h5 {
 }
 
 #skill {
-  padding: 120px 0;
+  padding: 100px 0;
+  border: 1px solid black;
 }
 #skill .skill_box {
   display: flex;

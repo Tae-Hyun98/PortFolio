@@ -150,14 +150,14 @@ const profileImg = document.querySelector('.profile_img');
 const aboutMe = document.querySelector('.about_me');
 const history = document.querySelector('.history');
 const certificate = document.querySelector('.certificate');
-const row=document.querySelector('.row')
+const row = document.querySelector('.row')
 
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(row, 1, {
   scrollTrigger: {
     trigger: profile,
-    start: 'top 50%'
+    start: 'top 30%'
   },
   y: 100,
   opacity: 0
@@ -167,7 +167,7 @@ gsap.from(row, 1, {
 gsap.from(skill, 1, {
   scrollTrigger: {
     trigger: skill,
-    start: 'top 50%',
+    start: 'top 30%',
   },
   y: 100,
   opacity: 0,
@@ -176,7 +176,7 @@ gsap.from(skill, 1, {
 gsap.from(project, 1, {
   scrollTrigger: {
     trigger: project,
-    start: 'top 50%',
+    start: 'top 30%',
   },
   y: 100,
   opacity: 0,

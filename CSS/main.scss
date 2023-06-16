@@ -277,8 +277,8 @@ h5 {
 
 // 프로필
 #profile {
-  padding: 120px 0;
-
+  padding: 100px 0;
+  border: 1px solid black;
   .row {
     display: flex;
     align-items: center;
@@ -349,8 +349,8 @@ h5 {
 
 //능력사항
 #skill {
-  padding: 120px 0;
-
+  padding: 100px 0;
+  border: 1px solid black;
   .skill_box {
     display: flex;
 
@@ -467,6 +467,7 @@ h5 {
 //프로젝트
 #project {
   padding: 120px 0;
+
   .project-Swiper {
     margin: 0 50px;
 
