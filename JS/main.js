@@ -197,7 +197,7 @@ $(function () {
 
 
 //프로젝트 스와이퍼
-const projectSwiper = new Swiper(".swiper", {
+const projectSwiper = new Swiper(".project-Swiper", {
   spaceBetween: 0,
   pagination: {
     el: ".swiper-pagination",
@@ -207,7 +207,6 @@ const projectSwiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
   breakpoints: {
     1024: {},
   },
