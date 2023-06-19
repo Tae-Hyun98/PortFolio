@@ -412,6 +412,7 @@ h5 {
 }
 #project .project-Swiper ul li .prject_box {
   position: relative;
+  border: 1px solid #777;
 }
 #project .project-Swiper ul li .prject_box:hover .description {
   transform: translateX(0);
