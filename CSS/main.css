@@ -266,7 +266,6 @@ h5 {
 }
 #profile .row .profile_img img {
   width: 100%;
-  height: 490px;
 }
 #profile .row .about_me ul li {
   display: flex;
@@ -423,7 +422,6 @@ h5 {
 #project .project-Swiper ul li .prject_box .description {
   position: absolute;
   top: 0;
-  transform: translateX(100%);
   opacity: 0;
   display: flex;
   justify-content: center;
