@@ -208,6 +208,9 @@ const projectSwiper = new Swiper(".project-Swiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    1024: {},
+    1024: {
+      slidesPerView : 'auto',
+      centeredSlides: true
+    },
   },
 });
