@@ -491,16 +491,24 @@ h5 {
       left: auto;
       right: -10px;
     }
- 
+
     .swiper-wrapper {
 
       .swiper-slide {
         padding: 0 50px;
 
-        .prject_box {
+        &.swiper-slide-active {
+          .project_box {
+            box-shadow: 10px 10px 2px #ccc;
+            scale: 1;
+          }
+        }
+
+        .project_box {
           position: relative;
-          box-shadow: 8px 8px 2px #737272;
           border-radius: 20px;
+          scale: 0.8;
+          transition: 1s;
 
           &:hover {
             .description {
@@ -618,8 +626,8 @@ h5 {
           }
         }
       }
-
     }
+
   }
 }
 
@@ -647,7 +655,7 @@ h5 {
     background-color: #fff;
     transition: .1s;
     animation: ania 2s infinite;
-    box-shadow: 0 0 15px #eee;
+    box-shadow: 10px 10px 2px #ccc;
 
     @keyframes ania {
       0% {
