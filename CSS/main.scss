@@ -471,6 +471,7 @@ h5 {
   padding: 120px 0;
 
   .project-Swiper {
+    overflow: visible;
 
     .button {
       position: absolute;
@@ -478,6 +479,11 @@ h5 {
       transform: translate(-50%, -50%);
       left: 0;
       z-index: 9999;
+
+      &::after {
+        font-size: 45px;
+        font-weight: 700;
+      }
     }
 
     .swiper-button-prev {
@@ -496,7 +502,7 @@ h5 {
 
         .prject_box {
           position: relative;
-          overflow: hidden;
+          border: 1px solid #777;
 
           &:hover {
             .description {
