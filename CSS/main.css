@@ -242,7 +242,6 @@ h5 {
 
 #profile {
   padding: 100px 0;
-  border: 1px solid black;
 }
 #profile .row {
   display: flex;
@@ -260,7 +259,7 @@ h5 {
   color: #000;
 }
 #profile .row .profile_img {
-  width: 380px;
+  width: 300px;
   border: 1px solid #ccc;
   overflow: hidden;
 }
@@ -293,7 +292,6 @@ h5 {
 
 #skill {
   padding: 100px 0;
-  border: 1px solid black;
 }
 #skill .skill_box {
   display: flex;
@@ -316,8 +314,8 @@ h5 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   margin-bottom: 20px;
   margin-right: 40px;
@@ -330,12 +328,12 @@ h5 {
   width: 60px;
 }
 #skill .skill_box .skill_left ul li p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   padding: 5px 0;
 }
 #skill .skill_box .skill_left ul li p.percent {
-  font-size: 18px;
+  font-size: 20px;
   color: blue;
 }
 #skill .skill_box .skill_left .tools ul {
@@ -346,7 +344,6 @@ h5 {
   margin-right: 0;
 }
 #skill .skill_box .skill_right {
-  margin-top: 50px;
   padding-left: 50px;
   width: 100%;
 }
@@ -366,7 +363,7 @@ h5 {
   cursor: pointer;
 }
 #skill .skill_box .skill_right > div .skill_header img {
-  width: 40px;
+  width: 45px;
   padding-right: 15px;
 }
 #skill .skill_box .skill_right > div .skill_header p {
@@ -384,7 +381,7 @@ h5 {
 }
 
 #project {
-  padding: 120px 0;
+  padding: 100px 0 120px;
 }
 #project .project-Swiper {
   overflow: visible;
@@ -407,86 +404,105 @@ h5 {
   left: auto;
   right: -10px;
 }
-#project .project-Swiper ul li {
-  padding: 0 60px;
+#project .project-Swiper .swiper-wrapper .swiper-slide {
+  padding: 0 50px;
 }
-#project .project-Swiper ul li .prject_box {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box {
   position: relative;
-  border: 1px solid #777;
+  box-shadow: 0 0 10px black;
+  border-radius: 30px;
 }
-#project .project-Swiper ul li .prject_box:hover .description {
-  transform: translateX(0);
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box:hover .description {
   opacity: 1;
 }
-#project .project-Swiper ul li .prject_box .project_img {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .project_img {
   width: 100%;
   position: relative;
 }
-#project .project-Swiper ul li .prject_box .project_img img {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .project_img img {
   width: 100%;
   height: 650px;
+  border-radius: 30px;
 }
-#project .project-Swiper ul li .prject_box .description {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   top: 0;
   opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.4s;
+  border-radius: 30px;
 }
-#project .project-Swiper ul li .prject_box .description .desc_text {
-  margin: 0 auto;
-}
-#project .project-Swiper ul li .prject_box .description .desc_text h2 {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description .desc_text h2 {
   text-align: center;
   font-size: 40px;
   margin-bottom: 10px;
   color: #fff;
 }
-#project .project-Swiper ul li .prject_box .description .desc_text h3 {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description .desc_text h3 {
   font-weight: 700;
   font-size: 22px;
   padding: 20px 0 5px;
   text-align: center;
   color: yellow;
 }
-#project .project-Swiper ul li .prject_box .description .desc_text p {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description .desc_text p {
   font-size: 20px;
   color: #fff;
   text-align: center;
 }
-#project .project-Swiper ul li .prject_box .description .desc_text p.use_skill {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description .go {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
-#project .project-Swiper ul li .prject_box .description .desc_text p.use_skill img {
-  width: 50px;
-  margin-right: 10px;
-}
-#project .project-Swiper ul li .prject_box .description .desc_text p.use_skill img:last-child {
-  margin-right: 0;
-}
-#project .project-Swiper ul li .prject_box .description .go {
-  margin: 0 auto;
-}
-#project .project-Swiper ul li .prject_box .description .go a {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description .go a {
   display: block;
   border: 2px solid #fff;
   border-radius: 30px;
   color: #fff;
   padding: 15px 65px;
-  text-align: center;
-  margin-bottom: 15px;
   transition: 0.3s;
   font-weight: 700;
+  margin-right: 15px;
 }
-#project .project-Swiper ul li .prject_box .description .go a:hover {
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description .go a:last-child {
+  margin-right: 0;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide .prject_box .description .go a:hover {
   background-color: #fff;
   color: #000;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill {
+  margin-top: 20px;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill h3 {
+  font-size: 26px;
+  text-align: center;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill li {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-right: 15px;
+  background-color: #eee;
+  padding-right: 10px;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill li:last-child {
+  margin-right: 0;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill li img {
+  width: 50px;
+  padding: 10px;
 }
 
 #contact {

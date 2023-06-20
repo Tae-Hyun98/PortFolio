@@ -278,7 +278,6 @@ h5 {
 // 프로필
 #profile {
   padding: 100px 0;
-  border: 1px solid black;
 
   .row {
     display: flex;
@@ -298,7 +297,7 @@ h5 {
     }
 
     .profile_img {
-      width: 380px;
+      width: 300px;
       border: 1px solid #ccc;
       overflow: hidden;
 
@@ -350,7 +349,6 @@ h5 {
 //능력사항
 #skill {
   padding: 100px 0;
-  border: 1px solid black;
 
   .skill_box {
     display: flex;
@@ -374,8 +372,8 @@ h5 {
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          width: 180px;
-          height: 180px;
+          width: 175px;
+          height: 175px;
           border-radius: 50%;
           margin-bottom: 20px;
           margin-right: 40px;
@@ -390,12 +388,12 @@ h5 {
           }
 
           p {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             padding: 5px 0;
 
             &.percent {
-              font-size: 18px;
+              font-size: 20px;
               color: blue;
             }
           }
@@ -416,7 +414,6 @@ h5 {
     }
 
     .skill_right {
-      margin-top: 50px;
       padding-left: 50px;
       width: 100%;
 
@@ -437,7 +434,7 @@ h5 {
           cursor: pointer;
 
           img {
-            width: 40px;
+            width: 45px;
             padding-right: 15px;
           }
 
@@ -468,7 +465,7 @@ h5 {
 
 //프로젝트
 #project {
-  padding: 120px 0;
+  padding: 100px 0 120px;
 
   .project-Swiper {
     overflow: visible;
@@ -494,19 +491,19 @@ h5 {
       left: auto;
       right: -10px;
     }
+ 
+    .swiper-wrapper {
 
-    ul {
-
-      li {
-        padding: 0 60px;
+      .swiper-slide {
+        padding: 0 50px;
 
         .prject_box {
           position: relative;
-          border: 1px solid #777;
+          box-shadow: 0 0 10px black;
+          border-radius: 30px;
 
           &:hover {
             .description {
-              transform: translateX(0);
               opacity: 1;
             }
           }
@@ -518,25 +515,25 @@ h5 {
             img {
               width: 100%;
               height: 650px;
+              border-radius: 30px;
             }
 
           }
 
           .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             position: absolute;
             top: 0;
             opacity: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 100%;
             height: 100%;
             background-color: rgba($color: #000000, $alpha: 0.8);
             transition: .4s;
+            border-radius: 30px;
 
             .desc_text {
-              margin: 0 auto;
-
               h2 {
                 text-align: center;
                 font-size: 40px;
@@ -556,25 +553,14 @@ h5 {
                 font-size: 20px;
                 color: #fff;
                 text-align: center;
-
-                &.use_skill {
-                  display: flex;
-                  justify-content: center;
-
-                  img {
-                    width: 50px;
-                    margin-right: 10px;
-
-                    &:last-child {
-                      margin-right: 0;
-                    }
-                  }
-                }
               }
+
             }
 
             .go {
-              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              margin-top: 30px;
 
               a {
                 display: block;
@@ -582,10 +568,13 @@ h5 {
                 border-radius: 30px;
                 color: #fff;
                 padding: 15px 65px;
-                text-align: center;
-                margin-bottom: 15px;
                 transition: .3s;
                 font-weight: 700;
+                margin-right: 15px;
+
+                &:last-child {
+                  margin-right: 0;
+                }
 
                 &:hover {
                   background-color: #fff;
@@ -593,8 +582,39 @@ h5 {
                 }
               }
             }
+          }
+        }
 
+        .desc_skill {
+          margin-top: 20px;
 
+          h3 {
+            font-size: 26px;
+            text-align: center;
+          }
+
+          .use_skill {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+
+            li {
+              display: flex;
+              align-items: center;
+              font-weight: 700;
+              margin-right: 15px;
+              background-color: #eee;
+              padding-right: 10px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+
+              img {
+                width: 50px;
+                padding: 10px;
+              }
+            }
           }
         }
       }

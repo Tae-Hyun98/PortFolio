@@ -210,7 +210,8 @@ const projectSwiper = new Swiper(".project-Swiper", {
   breakpoints: {
     1024: {
       slidesPerView : 'auto',
-      centeredSlides: true
+      centeredSlides: true,
+
     },
   },
 });
