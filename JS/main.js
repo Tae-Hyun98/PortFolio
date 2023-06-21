@@ -180,17 +180,17 @@ gsap.from(percent, 2, {
 
 //skill 다운
 $(function () {
-  $(".skill_text p").hide();
 
   $(".skill_header").click(function () {
-    let idx = $(".skill_header").index(this);
-    $(".skill_text p").eq(idx).stop().slideToggle(300);
 
-    if ($('.skill_header i').eq(idx).hasClass('fa-chevron-down')) {
-      $('.skill_header i').eq(idx).removeClass('fa-chevron-down').addClass('fa-chevron-up');
-    } else {
-      $('.skill_header i').eq(idx).removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    $('.skill_text p').slideUp();
+    $('.skill_header i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+
+    if ($(this).siblings('.skill_text').children('p').is(':hidden')) {
+      $(this).siblings('.skill_text').children('p').slideDown();
+      $(this).children('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
     }
+
   });
 
 });
@@ -209,7 +209,7 @@ const projectSwiper = new Swiper(".project-Swiper", {
   },
   breakpoints: {
     1024: {
-      slidesPerView : 'auto',
+      slidesPerView: 'auto',
       centeredSlides: true,
 
     },

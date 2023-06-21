@@ -376,6 +376,7 @@ h5 {
   right: 25px;
 }
 #skill .skill_box .skill_right > div .skill_text p {
+  display: none;
   padding: 0px 25px 15px;
   font-size: 18px;
 }
@@ -530,8 +531,9 @@ h5 {
   padding: 20px 100px 80px 100px;
   background-color: #fff;
   transition: 0.1s;
-  animation: ania 2s infinite;
+  animation: ania 2s infinite linear;
   box-shadow: 10px 10px 2px #ccc;
+  border-radius: 20px;
 }
 @keyframes ania {
   0% {
