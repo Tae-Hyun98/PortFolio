@@ -798,7 +798,12 @@ h5 {
   }
   #contact .contact_box {
     width: 100%;
-    padding: 25px 20px;
+    padding: 15px 0 15px 20px;
+    animation: none;
+    box-shadow: none;
+  }
+  #contact .contact_box ul li {
+    margin-bottom: 20px;
   }
   #contact .contact_box ul li img {
     width: 35px;
@@ -814,6 +819,7 @@ h5 {
   #contact .contact_box ul li:last-child {
     text-align: center;
     padding: 0;
+    padding-bottom: 20px;
   }
   #contact .contact_box ul li:last-child p {
     font-size: 24px;

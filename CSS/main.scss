@@ -1057,10 +1057,13 @@ h5 {
 
     .contact_box {
       width: 100%;
-      padding: 25px 20px;
+      padding: 15px 0 15px 20px;
+      animation: none;
+      box-shadow: none;
 
       ul {
         li {
+          margin-bottom: 20px;
           img {
             width: 35px;
             height: 35px;
@@ -1078,6 +1081,7 @@ h5 {
           &:last-child {
             text-align: center;
             padding: 0;
+            padding-bottom: 20px;
             p{
               font-size: 24px;
             }
