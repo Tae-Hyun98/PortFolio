@@ -55,9 +55,8 @@ h5 {
   transform: translateY(0%);
 }
 .header h1,
-.header p {
+.header i {
   display: none;
-  text-align: center;
 }
 .header nav .navigation {
   display: flex;
@@ -603,20 +602,51 @@ h5 {
 @media (max-width: 680px) {
   .header h1 {
     display: block;
+    text-align: center;
     font-weight: 700;
+    font-size: 26px;
+    line-height: 60px;
     color: #fff;
   }
+  .header i {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #fff;
+    font-size: 26px;
+  }
+  .header nav {
+    position: absolute;
+    height: 100vh;
+    left: -200px;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header nav .navigation {
+    display: block;
+  }
+  .header nav .navigation a {
+    padding: 20px 50px 20px 20px;
+  }
+  #intro {
+    width: 100%;
+    overflow: hidden;
+  }
   #intro .intro_box p {
-    font-size: 24px;
+    font-size: 20px;
   }
   #intro .intro_box p .under {
-    font-size: 30px;
+    font-size: 28px;
+  }
+  #intro .intro_box .bar {
+    margin: 40px auto;
   }
   #intro .intro_box span {
     font-size: 20px;
   }
   #intro .intro_box .typing span {
-    font-size: 18px;
+    font-size: 20px;
   }
   #intro .intro_box .down {
     position: absolute;
@@ -680,11 +710,6 @@ h5 {
     margin: 0 auto;
     padding: 0;
   }
-  #profile .row .profile_img img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
   #profile .row .about_me {
     margin: 20px 0;
   }
@@ -703,12 +728,16 @@ h5 {
   #skill .skill_box .skill_right {
     width: 100%;
     margin-top: 20px;
+    padding: 0;
   }
   #skill .skill_box .skill_right > div .skill_header img {
     width: 80px;
   }
   #skill .skill_box .skill_right > div .skill_header p {
     font-size: 22px;
+  }
+  #skill .skill_box .skill_left {
+    flex-direction: column;
   }
   #project .project-Swiper {
     width: 100%;
@@ -772,11 +801,19 @@ h5 {
   #contact .contact_box ul li span {
     font-size: 24px;
   }
-  #contact .contact_box ul li p, #contact .contact_box ul li a {
+  #contact .contact_box ul li p,
+  #contact .contact_box ul li a {
     font-size: 20px;
   }
   #contact .contact_box ul li:last-child {
     text-align: center;
     padding: 0;
+  }
+  #top {
+    right: 20px;
+    bottom: 20px;
+  }
+  #top i {
+    font-size: 36px;
   }
 }/*# sourceMappingURL=main.css.map */

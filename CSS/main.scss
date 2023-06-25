@@ -59,9 +59,8 @@ h5 {
   }
 
   h1,
-  p {
+  i {
     display: none;
-    text-align: center;
   }
 
   nav {
@@ -763,19 +762,53 @@ h5 {
   .header {
     h1 {
       display: block;
+      text-align: center;
       font-weight: 700;
+      font-size: 26px;
+      line-height: 60px;
       color: #fff;
+    }
+
+    i {
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      color: #fff;
+      font-size: 26px;
+    }
+
+    nav {
+      position: absolute;
+      height: 100vh;
+      left: -200px;
+      transition: .3s;
+      background-color: rgba($color: #000000, $alpha: 0.9);
+
+      .navigation {
+        display: block;
+        a{
+          padding: 20px 50px 20px 20px;
+        }
+      }
     }
   }
 
   #intro {
+    width: 100%;
+    overflow: hidden;
+
     .intro_box {
       p {
-        font-size: 24px;
+        font-size: 20px;
 
         .under {
-          font-size: 30px;
+          font-size: 28px;
         }
+      }
+
+      .bar {
+        margin: 40px auto;
       }
 
       span {
@@ -786,7 +819,7 @@ h5 {
 
       .typing {
         span {
-          font-size: 18px;
+          font-size: 20px;
 
         }
       }
@@ -874,11 +907,7 @@ h5 {
         margin: 0 auto;
         padding: 0;
 
-        img {
-          display: block;
-          width: 100%;
-          height: 100%
-        }
+
       }
 
       .about_me {
@@ -908,6 +937,7 @@ h5 {
       .skill_right {
         width: 100%;
         margin-top: 20px;
+        padding: 0;
 
         >div {
           .skill_header {
@@ -919,6 +949,14 @@ h5 {
               font-size: 22px;
             }
           }
+        }
+      }
+
+      .skill_left {
+        flex-direction: column;
+
+        .tools {
+          ul {}
         }
       }
     }
@@ -1004,6 +1042,7 @@ h5 {
 
   #contact {
     height: auto;
+
     h1 {
       font-size: 32px;
     }
@@ -1018,19 +1057,30 @@ h5 {
             width: 40px;
             height: 30px;
           }
-          span{
+
+          span {
             font-size: 24px;
           }
-          p, a{
+
+          p,
+          a {
             font-size: 20px;
           }
 
-          &:last-child{
+          &:last-child {
             text-align: center;
             padding: 0;
           }
         }
       }
+    }
+  }
+
+  #top{
+    right: 20px;
+    bottom: 20px;
+    i{
+      font-size: 36px;
     }
   }
 }

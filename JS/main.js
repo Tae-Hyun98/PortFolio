@@ -1,3 +1,22 @@
+const menuBar = document.querySelector('.menubar');
+const navi = document.getElementById('nav');
+let state = 0;
+menuBar.addEventListener('click', () => {
+  if (state === 0) {
+    navi.style.left = 0
+    state = 1
+  } else {
+    navi.style.left = '-200px'
+    state = 0
+  }
+})
+
+
+
+
+
+
+
 const text = document.querySelector(".text");
 
 const letters = [
