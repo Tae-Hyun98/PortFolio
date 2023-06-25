@@ -755,6 +755,9 @@ h5 {
     width: 40px;
     padding: 5px;
   }
+  #contact {
+    height: auto;
+  }
   #contact h1 {
     font-size: 32px;
   }
