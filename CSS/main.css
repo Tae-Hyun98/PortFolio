@@ -600,6 +600,9 @@ h5 {
   }
 }
 @media (max-width: 680px) {
+  .header.on {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
   .header h1 {
     display: block;
     text-align: center;
@@ -625,13 +628,16 @@ h5 {
   }
   .header nav .navigation {
     display: block;
+    border-top: 1px solid #ccc;
   }
   .header nav .navigation a {
-    padding: 20px 50px 20px 20px;
+    padding: 20px 60px 20px 20px;
+    border-bottom: 1px solid #ccc;
   }
   #intro {
     width: 100%;
     overflow: hidden;
+    background-position: 25% 90%;
   }
   #intro .intro_box p {
     font-size: 20px;
@@ -694,7 +700,7 @@ h5 {
   .container {
     width: 100%;
     margin: 0;
-    padding: 0 40px;
+    padding: 0 30px;
   }
   #profile .row {
     flex-direction: column;
@@ -799,15 +805,18 @@ h5 {
     height: 30px;
   }
   #contact .contact_box ul li span {
-    font-size: 24px;
+    font-size: 18px;
   }
   #contact .contact_box ul li p,
   #contact .contact_box ul li a {
-    font-size: 20px;
+    font-size: 16px;
   }
   #contact .contact_box ul li:last-child {
     text-align: center;
     padding: 0;
+  }
+  #contact .contact_box ul li:last-child p {
+    font-size: 24px;
   }
   #top {
     right: 20px;

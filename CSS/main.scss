@@ -760,6 +760,10 @@ h5 {
 //모바일
 @media (max-width:680px) {
   .header {
+    &.on {
+      background-color: rgba($color: #000000, $alpha: 0.9);
+    }
+
     h1 {
       display: block;
       text-align: center;
@@ -787,8 +791,11 @@ h5 {
 
       .navigation {
         display: block;
-        a{
-          padding: 20px 50px 20px 20px;
+        border-top: 1px solid #ccc;
+
+        a {
+          padding: 20px 60px 20px 20px;
+          border-bottom: 1px solid #ccc;
         }
       }
     }
@@ -797,6 +804,7 @@ h5 {
   #intro {
     width: 100%;
     overflow: hidden;
+    background-position: 25% 90%;
 
     .intro_box {
       p {
@@ -887,7 +895,7 @@ h5 {
   .container {
     width: 100%;
     margin: 0;
-    padding: 0 40px;
+    padding: 0 30px;
 
   }
 
@@ -1059,27 +1067,31 @@ h5 {
           }
 
           span {
-            font-size: 24px;
+            font-size: 18px;
           }
 
           p,
           a {
-            font-size: 20px;
+            font-size: 16px;
           }
 
           &:last-child {
             text-align: center;
             padding: 0;
+            p{
+              font-size: 24px;
+            }
           }
         }
       }
     }
   }
 
-  #top{
+  #top {
     right: 20px;
     bottom: 20px;
-    i{
+
+    i {
       font-size: 36px;
     }
   }
