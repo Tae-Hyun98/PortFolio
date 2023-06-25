@@ -198,7 +198,9 @@ $(function () {
 
 //프로젝트 스와이퍼
 const projectSwiper = new Swiper(".project-Swiper", {
-  spaceBetween: 0,
+  spaceBetween: 50,
+  slidesPerView: 1,
+  centeredSlides: false,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -209,6 +211,7 @@ const projectSwiper = new Swiper(".project-Swiper", {
   },
   breakpoints: {
     1024: {
+      spaceBetween: 0,
       slidesPerView: 'auto',
       centeredSlides: true,
 

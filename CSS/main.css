@@ -54,7 +54,8 @@ h5 {
   background-color: rgba(0, 0, 0, 0.8);
   transform: translateY(0%);
 }
-.header h1 {
+.header h1,
+.header p {
   display: none;
   text-align: center;
 }
@@ -600,6 +601,11 @@ h5 {
   }
 }
 @media (max-width: 680px) {
+  .header h1 {
+    display: block;
+    font-weight: 700;
+    color: #fff;
+  }
   #intro .intro_box p {
     font-size: 24px;
   }
@@ -705,14 +711,48 @@ h5 {
     font-size: 22px;
   }
   #project .project-Swiper {
-    margin: 0;
+    width: 100%;
   }
   #project .project-Swiper .swiper-wrapper .swiper-slide {
-    overflow: hidden;
+    padding: 0;
   }
-  #project .project-Swiper .swiper-wrapper .swiper-slide img {
+  #project .project-Swiper .swiper-wrapper .swiper-slide.swiper-slide-active .project_box {
+    box-shadow: none;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box .project_img img {
     width: 100%;
-    height: 250px;
-    box-shadow: 0 0 5px #555;
+    height: 260px;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box {
+    scale: 1;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box .description {
+    position: unset;
+    opacity: 1;
+    background-color: #fff;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box .description .desc_text h2,
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box .description .desc_text p {
+    color: #000;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box .description .desc_text p {
+    font-size: 16px;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box .description .desc_text h3 {
+    color: violet;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .project_box .description .go a {
+    color: #000;
+    padding: 5px 8px;
+    border-radius: 20px;
+    border: 1px solid #777;
+    margin-right: 10px;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill {
+    flex-wrap: wrap;
+  }
+  #project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill li img {
+    width: 40px;
+    padding: 5px;
   }
 }/*# sourceMappingURL=main.css.map */
