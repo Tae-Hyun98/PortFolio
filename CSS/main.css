@@ -39,10 +39,6 @@ h5 {
   color: rgba(255, 255, 0, 0.889);
 }
 
-.wrap {
-  overflow: hidden;
-}
-
 .header {
   width: 100%;
   position: fixed;
@@ -130,7 +126,6 @@ h5 {
 #intro .intro_box {
   position: relative;
   height: 100%;
-  min-width: 1280px;
   margin: 0 auto;
   z-index: 1;
   display: flex;
@@ -149,16 +144,6 @@ h5 {
   color: #fff;
   letter-spacing: 1px;
   text-shadow: 1px 1px #000, 3px 3px #000;
-  /* .under::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: yellow;
-  } */
 }
 #intro .intro_box p .under,
 #intro .intro_box span .under {
@@ -384,7 +369,12 @@ h5 {
 #project {
   padding: 100px 0 120px;
 }
+#project .container {
+  width: 100%;
+  overflow: hidden;
+}
 #project .project-Swiper {
+  width: 1280px;
   overflow: visible;
 }
 #project .project-Swiper .button {
@@ -592,7 +582,10 @@ h5 {
   color: blue;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
+  .container {
+    width: 100%;
+  }
   #intro .intro_box span {
     font-size: 40px;
   }
@@ -602,13 +595,19 @@ h5 {
   #intro .intro_box .typing span {
     font-size: 36px;
   }
+  #project .project-Swiper {
+    width: 100%;
+  }
 }
 @media (max-width: 680px) {
+  #intro .intro_box p {
+    font-size: 24px;
+  }
+  #intro .intro_box p .under {
+    font-size: 30px;
+  }
   #intro .intro_box span {
     font-size: 20px;
-  }
-  #intro .intro_box span .under {
-    font-size: 26px;
   }
   #intro .intro_box .typing span {
     font-size: 18px;
@@ -645,6 +644,16 @@ h5 {
     font-size: 28px;
     font-weight: 700;
     line-height: 30px;
+  }
+  #intro .intro_img img {
+    width: 513px;
+    top: -18px;
+    left: -90px;
+  }
+  #intro .intro_img::after {
+    width: 280px;
+    height: 280px;
+    top: 35px;
   }
   .container {
     width: 100%;
