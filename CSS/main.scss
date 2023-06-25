@@ -949,8 +949,9 @@ h5 {
 
         >div {
           .skill_header {
+            padding: 10px 20px;
             img {
-              width: 80px;
+              width: 65px;
             }
 
             p {
@@ -1026,6 +1027,7 @@ h5 {
                   border-radius: 20px;
                   border: 1px solid #777;
                   margin-right: 10px;
+                  text-align: center;
                 }
               }
             }

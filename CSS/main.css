@@ -736,8 +736,11 @@ h5 {
     margin-top: 20px;
     padding: 0;
   }
+  #skill .skill_box .skill_right > div .skill_header {
+    padding: 10px 20px;
+  }
   #skill .skill_box .skill_right > div .skill_header img {
-    width: 80px;
+    width: 65px;
   }
   #skill .skill_box .skill_right > div .skill_header p {
     font-size: 22px;
@@ -782,6 +785,7 @@ h5 {
     border-radius: 20px;
     border: 1px solid #777;
     margin-right: 10px;
+    text-align: center;
   }
   #project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill {
     flex-wrap: wrap;
