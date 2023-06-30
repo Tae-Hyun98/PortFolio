@@ -489,9 +489,10 @@ h5 {
   display: flex;
   align-items: center;
   font-weight: 700;
-  margin-right: 15px;
+  margin-right: 10px;
   background-color: #eee;
   padding-right: 10px;
+  border-radius: 10px;
 }
 #project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill .use_skill li:last-child {
   margin-right: 0;
