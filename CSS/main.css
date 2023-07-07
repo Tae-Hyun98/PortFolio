@@ -370,8 +370,15 @@ h5 {
   padding: 100px 0 120px;
 }
 #project .container {
+  position: relative;
   width: 100%;
   overflow: hidden;
+}
+#project .container h1 span {
+  position: absolute;
+  font-size: 16px;
+  top: 30px;
+  right: 70px;
 }
 #project .project-Swiper {
   width: 1280px;
@@ -401,6 +408,9 @@ h5 {
 #project .project-Swiper .swiper-wrapper .swiper-slide.swiper-slide-active .project_box {
   box-shadow: 10px 10px 2px #ccc;
   scale: 1;
+}
+#project .project-Swiper .swiper-wrapper .swiper-slide.swiper-slide-active .desc_skill {
+  opacity: 1;
 }
 #project .project-Swiper .swiper-wrapper .swiper-slide .project_box {
   position: relative;
@@ -474,6 +484,7 @@ h5 {
   color: #000;
 }
 #project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill {
+  opacity: 0;
   margin-top: 20px;
 }
 #project .project-Swiper .swiper-wrapper .swiper-slide .desc_skill h3 {
@@ -836,4 +847,10 @@ h5 {
   #top i {
     font-size: 36px;
   }
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  background-color: #111;
 }/*# sourceMappingURL=main.css.map */
