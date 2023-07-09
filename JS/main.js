@@ -1,4 +1,4 @@
-const menuBar = document.querySelector('.menubar');
+/* const menuBar = document.querySelector('.menubar');
 const navi = document.getElementById('nav');
 let state = 0;
 menuBar.addEventListener('click', () => {
@@ -9,9 +9,7 @@ menuBar.addEventListener('click', () => {
     navi.style.left = '-200px'
     state = 0
   }
-})
-
-
+}) */
 
 
 
@@ -127,6 +125,19 @@ down.addEventListener("click", () => {
 
 //탑버튼
 const Top = document.getElementById("top");
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= profile.offsetTop) {
+    gsap.to(Top, 1, {
+      opacity: 1
+    })
+  } else {
+    gsap.to(Top, 1, {
+      opacity: 0
+    })
+  }
+})
+
 Top.addEventListener("click", () => {
   scroller(0);
 });

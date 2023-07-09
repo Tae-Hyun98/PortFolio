@@ -733,6 +733,7 @@ h5 {
   background-color: #fff;
   cursor: pointer;
   z-index: 9999;
+  opacity: 0;
 
   i {
     font-size: 50px;
@@ -1122,7 +1123,6 @@ h5 {
   #top {
     right: 20px;
     bottom: 20px;
-
     i {
       font-size: 36px;
     }
