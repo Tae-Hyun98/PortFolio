@@ -243,12 +243,16 @@ h5 {
   font-size: 22px;
   color: #000;
 }
-#profile .row .profile_img {
+#profile .row .my_introduce {
+  margin-bottom: 50px;
+}
+#profile .row .my_introduce .profile_img {
   width: 300px;
+  border-radius: 40px;
   border: 1px solid #ccc;
   overflow: hidden;
 }
-#profile .row .profile_img img {
+#profile .row .my_introduce .profile_img img {
   width: 100%;
 }
 #profile .row .about_me ul li {
