@@ -456,8 +456,18 @@ h5 {
   padding: 100px 0 120px;
 
   .container {
+    position: relative;
     width: 100%;
     overflow: hidden;
+
+    h1 {
+      span {
+        position: absolute;
+        font-size: 16px;
+        top: 30px;
+        right: 70px;
+      }
+    }
   }
 
   .project-Swiper {
@@ -495,6 +505,10 @@ h5 {
           .project_box {
             box-shadow: 10px 10px 2px #ccc;
             scale: 1;
+          }
+
+          .desc_skill {
+            opacity: 1;
           }
         }
 
@@ -588,6 +602,7 @@ h5 {
         }
 
         .desc_skill {
+          opacity: 0;
           margin-top: 20px;
 
           h3 {
@@ -951,6 +966,7 @@ h5 {
         >div {
           .skill_header {
             padding: 10px 20px;
+
             img {
               width: 60px;
             }
@@ -1067,6 +1083,7 @@ h5 {
       ul {
         li {
           margin-bottom: 20px;
+
           img {
             width: 35px;
             height: 35px;
@@ -1085,7 +1102,8 @@ h5 {
             text-align: center;
             padding: 0;
             padding-bottom: 20px;
-            p{
+
+            p {
               font-size: 24px;
             }
           }
@@ -1093,6 +1111,8 @@ h5 {
       }
     }
   }
+
+
 
   #top {
     right: 20px;
@@ -1102,4 +1122,11 @@ h5 {
       font-size: 36px;
     }
   }
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  background-color: #111;
 }
