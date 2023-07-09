@@ -13,8 +13,6 @@ menuBar.addEventListener('click', () => {
 
 
 
-
-
 const text = document.querySelector(".text");
 
 const letters = [
@@ -100,6 +98,32 @@ const project = document.getElementById("project");
 const contact = document.getElementById("contact");
 
 const navEl = document.querySelectorAll(".navigation a");
+
+//navigaion on
+window.addEventListener('scroll', () => {
+  const introP = intro.offsetTop;
+  const profileP = profile.offsetTop - 70
+  const skillP = skill.offsetTop - 70
+  const projectP = project.offsetTop - 70
+  const contactP = contact.offsetTop - 70
+
+  for (let el of navEl) {
+    el.classList.remove('on')
+  }
+  if (window.scrollY >= introP & window.scrollY <= profileP) {
+    navEl[0].classList.add('on')
+  } else if (window.scrollY >= profileP & window.scrollY <= skillP) {
+    navEl[1].classList.add('on')
+  } else if (window.scrollY >= skillP & window.scrollY <= projectP) {
+    navEl[2].classList.add('on')
+  } else if (window.scrollY >= projectP & window.scrollY <= contactP) {
+    navEl[3].classList.add('on')
+  } else if (window.scrollY >= contactP) {
+    navEl[4].classList.add('on')
+  }
+
+})
+
 
 navEl.forEach((item, idx) => {
   item.addEventListener("click", () => {
