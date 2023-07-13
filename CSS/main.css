@@ -66,7 +66,7 @@ h5 {
   display: block;
   color: #fff;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   padding: 15px 25px;
   transition: 0.3s;
 }
@@ -360,7 +360,7 @@ h5 {
   padding-right: 15px;
 }
 #skill .skill_box .skill_right > div .skill_header p {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
 }
 #skill .skill_box .skill_right > div .skill_header i {
@@ -370,8 +370,8 @@ h5 {
 }
 #skill .skill_box .skill_right > div .skill_text p {
   display: none;
-  padding: 0px 25px 15px;
-  font-size: 18px;
+  padding: 0px 25px 10px;
+  font-size: 17px;
 }
 
 #project {
