@@ -386,7 +386,7 @@ h5 {
   position: absolute;
   font-size: 16px;
   top: 30px;
-  right: 70px;
+  padding-left: 20px;
 }
 #project .project-Swiper {
   width: 1280px;
