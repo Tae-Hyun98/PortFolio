@@ -231,7 +231,6 @@ h5 {
 }
 #profile .row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 #profile .row p,
@@ -252,9 +251,15 @@ h5 {
   border-radius: 40px;
   border: 1px solid #ccc;
   overflow: hidden;
+  text-align: center;
 }
 #profile .row .my_introduce .profile_img img {
   width: 100%;
+}
+#profile .row .my_introduce .desc {
+  width: 300px;
+  font-size: 18px;
+  padding-top: 10px;
 }
 #profile .row .about_me ul li {
   display: flex;
