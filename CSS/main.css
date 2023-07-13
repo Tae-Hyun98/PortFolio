@@ -413,6 +413,9 @@ h5 {
 #project .project-Swiper .swiper-wrapper .swiper-slide {
   padding: 0 50px;
 }
+#project .project-Swiper .swiper-wrapper .swiper-slide:nth-child(2) .project_box {
+  border: 1px solid #ccc;
+}
 #project .project-Swiper .swiper-wrapper .swiper-slide.swiper-slide-active .project_box {
   box-shadow: 10px 10px 2px #ccc;
   scale: 1;

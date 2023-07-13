@@ -512,6 +512,12 @@ h5 {
       .swiper-slide {
         padding: 0 50px;
 
+        &:nth-child(2) {
+          .project_box {
+            border: 1px solid #ccc;
+          }
+        }
+
         &.swiper-slide-active {
           .project_box {
             box-shadow: 10px 10px 2px #ccc;
