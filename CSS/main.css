@@ -414,9 +414,10 @@ h5 {
   padding: 0 50px;
 }
 #project .project-Swiper .swiper-wrapper .swiper-slide:nth-child(2) .project_box {
-  border: 1px solid #ccc;
+  border: 1px solid #777;
 }
 #project .project-Swiper .swiper-wrapper .swiper-slide.swiper-slide-active .project_box {
+  border: none;
   box-shadow: 10px 10px 2px #ccc;
   scale: 1;
 }

@@ -514,12 +514,13 @@ h5 {
 
         &:nth-child(2) {
           .project_box {
-            border: 1px solid #ccc;
+            border: 1px solid #777;
           }
         }
 
         &.swiper-slide-active {
           .project_box {
+            border: none;
             box-shadow: 10px 10px 2px #ccc;
             scale: 1;
           }
