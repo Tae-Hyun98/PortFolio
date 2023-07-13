@@ -231,6 +231,7 @@ h5 {
 }
 #profile .row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 #profile .row p,
@@ -242,9 +243,6 @@ h5 {
   font-weight: 700;
   font-size: 22px;
   color: #000;
-}
-#profile .row .my_introduce {
-  margin-bottom: 50px;
 }
 #profile .row .my_introduce .profile_img {
   width: 300px;

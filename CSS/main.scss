@@ -269,6 +269,7 @@ h5 {
 
   .row {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     p,
@@ -284,7 +285,6 @@ h5 {
     }
 
     .my_introduce {
-      margin-bottom: 50px;
 
       .profile_img {
         width: 300px;
