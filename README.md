@@ -6,6 +6,12 @@
 <a href="#!"><img height="20px" src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white"/></a>
 <a href="#!"><img height="20px" src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=white"/></a>
 <a href="#!"><img height="20px" src="https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=white"/></a>
+<a href="#!"><img src="https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white"/></a>
+<br/>
+<a href="#!"><img src="https://img.shields.io/badge/StyledComponents-DB7093?style=flat&logo=styledcomponents&logoColor=white"/></a>
+<a href="#!"><img src="https://img.shields.io/badge/FramerMotion-0055FF?style=flat&logo=framer&logoColor=white"/></a>
+<a href="#!"><img src="https://img.shields.io/badge/swiper.js-6332F6?style=flat&logo=swiper&logoColor=white"/></a>
+<a href="#!"><img src="https://img.shields.io/badge/gsap.js-88CE02?style=flat&logo=greensock&logoColor=white"/></a>
 
 ## 📌 Project
 
