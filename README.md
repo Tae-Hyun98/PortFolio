@@ -9,6 +9,20 @@
 
 ## 📌 Project
 
+### 2. Genesis
+> genesis를 프로모션형태로 변경하여 제작한 프로모션사이트입니다.
+> 개발 기간: 2023.07.03 ~ 2023.07.06
+>
+> 사용한 기술 스택  
+  <a href="#!"><img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"/></a>
+  <a href="#!"><img src="https://img.shields.io/badge/scss-CC6699?style=flat&logo=sass&logoColor=white"/></a>
+  <a href="#!"><img src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white"/></a>
+  <a href="#!"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=white"/></a>
+  <a href="#!"><img src="https://img.shields.io/badge/swiper.js-6332F6?style=flat&logo=swiper&logoColor=white"/></a>
+  <a href="#!"><img src="https://img.shields.io/badge/gsap.js-88CE02?style=flat&logo=greensock&logoColor=white"/></a>
+
+<br/>
+
 ### 2. Baskin Kiosk
 > 베스킨라빈스를 참고하여 키오스크로 제작한 React 프로젝트입니다.
 > 개발 기간: 2023.06.21 ~ 2023.06.30
